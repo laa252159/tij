@@ -1,14 +1,14 @@
-package gl3;
+package gl3.hw;
 
 public class PassObject{
  
  static void f(Letter y){
-    y.c = 'z';
+    y.c = 1f;
  }
  
  public static void main(String[] args){
    Letter x = new Letter();
-   x.c = 'a';
+   x.c = 2f;
    System.out.println("1: x.c " + x.c);
    f(x);
    System.out.println("2: x.c " + x.c);
@@ -18,5 +18,5 @@ public class PassObject{
 }
 
 class Letter{
-   char c;
+   float c;
 }

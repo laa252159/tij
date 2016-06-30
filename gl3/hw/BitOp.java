@@ -10,7 +10,7 @@ public class BitOp{
       System.out.println("AND " + Integer.toBinaryString(bin1 & bin2));   
       System.out.println("OR " + Integer.toBinaryString(bin1 | bin2));   
       System.out.println("XOR " + Integer.toBinaryString(bin1 ^ bin2));   
-      System.out.println("~ bin1" + Integer.toBinaryString(~bin1));   
-      System.out.println("~ bin2" + Integer.toBinaryString(~bin2));   
+      System.out.println("~ bin1 " + Integer.toBinaryString(~bin1));   
+      System.out.println("~ bin2 " + Integer.toBinaryString(~bin2));   
    }
 }

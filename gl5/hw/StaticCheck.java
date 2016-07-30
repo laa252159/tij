@@ -2,11 +2,10 @@ package gl5.hw;
 
 public class StaticCheck{
    
-   static int i;
+   static int i = 5;
    static String str;
 
    static {
-      i = 5;
       str = "static string";
       System.out.println("Class was made" + " i = " + i + " str = " + str);
    }

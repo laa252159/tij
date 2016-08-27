@@ -1,4 +1,4 @@
-package gl5;
+package mylibs;
 
 import java.io.PrintStream;
 

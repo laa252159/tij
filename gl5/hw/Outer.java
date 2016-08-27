@@ -21,7 +21,7 @@ public class Outer extends Inner{
 }
 
 class Test{
-   private void test(){
-      System.out.println("private !!!");
+   protected void test(){
+      System.out.println("protected !!!");
    }
 }

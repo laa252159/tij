@@ -8,6 +8,7 @@ public class Outer extends Inner{
       }
 
    public static void main(String[] args){
+      assert(true);
       Inner.testPublic();
       Outer outer = new Outer();
       outer.testPublic();

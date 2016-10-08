@@ -1,23 +1,24 @@
 package gl7.hw.reusing;
 
 class A{
-   A(){
-      System.out.println("Builder of A");
+   A(int i){
+      System.out.println("Builder of A - " + i);
    }
 }
 
 class B{
-   B(){
-      System.out.println("Builder of B");
+   B(int i){
+      System.out.println("Builder of B - " + i);
    }
 }
 
 class C extends A{
    C(){
-      b = new B();
-      System.out.println("Builder of C");
+      super(2);
+      b = new B(4);
+      System.out.println("Builder of C - " + 5);
    }
-   B b = new B();
+   B b = new B(3);
    public static void main(String[] args){
       C c = new C();
    }

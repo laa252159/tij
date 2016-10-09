@@ -11,10 +11,13 @@ public class Detergent{
    public void delute(){
       c.delute();
    }
-
+   
+   public String toString(){
+      return c.toString();
+   }
 
    public static void main(String[] args){
-      Cleanser x = new Cleanser();
+      Detergent x = new Detergent();
       x.delute();
       x.scrub();
       System.out.println(x);

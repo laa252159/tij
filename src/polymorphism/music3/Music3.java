@@ -6,36 +6,37 @@ import static net.mindview.util.Print.*;
 
 class Instrument {
   void play(Note n) { print("Instrument.play() " + n); }
-  String what() { return "Instrument"; }
+  public String toString() { return this.getClass().getSimpleName(); }
   void adjust() { print("Adjusting Instrument"); }
 }
 
 class Wind extends Instrument {
   void play(Note n) { print("Wind.play() " + n); }
-  String what() { return "Wind"; }
+  public String toString() { return this.getClass().getSimpleName(); }
   void adjust() { print("Adjusting Wind"); }
 }	
 
 class Percussion extends Instrument {
   void play(Note n) { print("Percussion.play() " + n); }
-  String what() { return "Percussion"; }
+  public String toString() { return this.getClass().getSimpleName(); }
   void adjust() { print("Adjusting Percussion"); }
 }
 
 class Stringed extends Instrument {
   void play(Note n) { print("Stringed.play() " + n); }
-  String what() { return "Stringed"; }
+  public String toString() { return this.getClass().getSimpleName(); }
   void adjust() { print("Adjusting Stringed"); }
 }
 
 class Brass extends Wind {
   void play(Note n) { print("Brass.play() " + n); }
+  public String toString() { return this.getClass().getSimpleName(); }
   void adjust() { print("Adjusting Brass"); }
 }
 
 class Woodwind extends Wind {
   void play(Note n) { print("Woodwind.play() " + n); }
-  String what() { return "Woodwind"; }
+  public String toString() { return this.getClass().getSimpleName(); }
 }	
 
 public class Music3 {
@@ -44,6 +45,7 @@ public class Music3 {
   public static void tune(Instrument i) {
     // ...
     i.play(Note.MIDDLE_C);
+    System.out.println(i);
   }
   public static void tuneAll(Instrument[] e) {
     for(Instrument i : e)

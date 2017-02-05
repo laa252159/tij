@@ -12,8 +12,10 @@ public class Shapes {
     for(int i = 0; i < s.length; i++)
       s[i] = gen.next();
     // Make polymorphic method calls:
-    for(Shape shp : s)
+    for(Shape shp : s){
       shp.draw();
+      shp.delete();
+    }
   }
 } /* Output:
 Triangle.draw()

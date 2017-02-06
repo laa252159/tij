@@ -3,6 +3,7 @@
 package polymorphism.music3;
 import polymorphism.music.Note;
 import static net.mindview.util.Print.*;
+import java.util.*;
 
 class Instrument {
   void play(Note n) { print("Instrument.play() " + n); }
@@ -37,6 +38,11 @@ class Brass extends Wind {
 class Woodwind extends Wind {
   void play(Note n) { print("Woodwind.play() " + n); }
   public String toString() { return this.getClass().getSimpleName(); }
+}
+
+class Sax extends Wind {
+  void play(Note n) { print("Sax.play() " + n); }
+  public String toString() { return this.getClass().getSimpleName(); }
 }	
 
 public class Music3 {
@@ -47,19 +53,35 @@ public class Music3 {
     i.play(Note.MIDDLE_C);
     System.out.println(i);
   }
-  public static void tuneAll(Instrument[] e) {
+  public static void tuneAll(List<Instrument> e) {
     for(Instrument i : e)
       tune(i);
   }	
   public static void main(String[] args) {
-    // Upcasting during addition to the array:
-    Instrument[] orchestra = {
+   Random random = new Random();
+   // Upcasting during addition to the array:
+   List<Instrument> orchestra = new LinkedList<>();
+   for(int i = 0 ; i < 10; i++){
+      int num = random.nextInt(6);
+      switch(num){
+         default:
+	 case 0: orchestra.add(new Wind()); break; 
+	 case 1: orchestra.add(new Percussion()); break; 
+	 case 2: orchestra.add(new Stringed()); break;
+	 case 3: orchestra.add(new Brass()); break;
+	 case 4: orchestra.add(new Woodwind()); break;
+	 case 5: orchestra.add(new Sax()); break;
+      }
+   }
+    
+    /*Instrument[] orchestra = {
       new Wind(),
       new Percussion(),
       new Stringed(),
       new Brass(),
-      new Woodwind()
-    };
+      new Woodwind(),
+      new Sax()
+    };*/
     tuneAll(orchestra);
   }
 } /* Output:

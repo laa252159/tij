@@ -3,7 +3,14 @@
 package polymorphism;
 import static net.mindview.util.Print.*;
 
-class Meal {
+class Pickle{
+  Pickle(){
+     print("Pickle");
+  }
+}
+
+
+class Meal extends Pickle {
   Meal() { print("Meal()"); }
 }
 

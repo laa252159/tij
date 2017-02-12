@@ -41,6 +41,8 @@ public class Sandwich extends PortableLunch {
   public Sandwich() { print("Sandwich()"); }
   public static void main(String[] args) {
     new Sandwich();
+    new Sandwich();
+
   }
 } /* Output:
 Meal()

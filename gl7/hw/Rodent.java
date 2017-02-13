@@ -2,15 +2,30 @@ package gl7.hw;
 import java.util.*;
 
 class Leg{
+   private static long counter;
+   private final long id = counter++;
+   private long links;
    String str = "leg";
+   public void addRef(){
+      links++;
+   }
+   public dispose(){
+      if(--links == 0){
+         System.out.println("ID:" + id + " disposed");
+      }
+   }
    Leg(String t){
       System.out.println(str + " of " + t + " constructor");
+   }
+   public String toString(){
+      return "ID - " + id + " links - " + links;
    }
 }
 
 class Grizun {
-  Leg l = new Leg("grizun");
-  Grizun(){
+  Leg l;
+  Grizun(Leg leg){
+      this.l = leg;
       System.out.println("Grizun constructor");
   }
   void play(String n) { System.out.println("Rodent.play() " + n); }
@@ -19,8 +34,9 @@ class Grizun {
 }
 
 class Mouse extends Grizun {
-  Leg l = new Leg("mouse");
-  Mouse(){
+  Leg l;
+  Mouse(Leg leg){
+      this.l = leg;
       System.out.println("Mouse constructor");
   }
   void play(String n) { System.out.println("Mouse.play() " + n); }
@@ -29,8 +45,9 @@ class Mouse extends Grizun {
 }	
 
 class Hamster extends Grizun {
-  Leg l = new Leg("hamster");
-  Hamster(){
+  Leg l;
+  Hamster(Leg leg){
+      this.l = leg;
       System.out.println(" constructor");
   }
   void play(String n) { System.out.println("Hamster.play() " + n); }

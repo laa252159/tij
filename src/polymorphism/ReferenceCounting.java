@@ -28,8 +28,10 @@ class Composing {
     this.shared.addRef();
   }
   protected void dispose() {
+    System.gc();
     print("disposing " + this);
     shared.dispose();
+    shared = null;
   }
   public String toString() { return "Composing " + id; }
 }
@@ -42,6 +44,7 @@ public class ReferenceCounting {
       new Composing(shared), new Composing(shared) };
     for(Composing c : composing)
       c.dispose();
+    System.gc();
   }
   protected void finalize(){
      print("DONE DONE");    

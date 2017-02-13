@@ -1,19 +1,38 @@
 package gl7.hw;
 import java.util.*;
 
+class Leg{
+   String str = "leg";
+   Leg(String t){
+      System.out.println(str + " of " + t + " constructor");
+   }
+}
+
 class Grizun {
+  Leg l = new Leg("grizun");
+  Grizun(){
+      System.out.println("Grizun constructor");
+  }
   void play(String n) { System.out.println("Rodent.play() " + n); }
   public String toString() { return this.getClass().getSimpleName(); }
   void feed() { System.out.println("Feed Rodent"); }
 }
 
 class Mouse extends Grizun {
+  Leg l = new Leg("mouse");
+  Mouse(){
+      System.out.println("Mouse constructor");
+  }
   void play(String n) { System.out.println("Mouse.play() " + n); }
   public String toString() { return this.getClass().getSimpleName(); }
   void feed() { System.out.println("Feed Mouse"); }
 }	
 
 class Hamster extends Grizun {
+  Leg l = new Leg("hamster");
+  Hamster(){
+      System.out.println(" constructor");
+  }
   void play(String n) { System.out.println("Hamster.play() " + n); }
   public String toString() { return this.getClass().getSimpleName(); }
   void feed() { System.out.println("Adjusting Percussion"); }
@@ -32,7 +51,7 @@ public class Rodent {
    Random random = new Random();
    // Upcasting during addition to the array:
    List<Grizun> animals = new LinkedList<>();
-   for(int i = 0 ; i < 10; i++){
+   for(int i = 0 ; i < 3; i++){
       int num = random.nextInt(2);
       switch(num){
          default:

@@ -1,4 +1,4 @@
-package src.hw;
+package hw;
 
 public class Cycle{
    public void ride(){
@@ -16,6 +16,9 @@ public class Cycle{
          cycles[i].ride();
 	 System.out.println("Wheels = " + cycles[i].getWheels());
       }
+      ((Unicycle)cycles[0]).balance();
+      ((Bicycle)cycles[1]).balance();
+      ((Bicycle)cycles[2]).balance();
    }
 }
 
@@ -27,6 +30,9 @@ class Unicycle extends Cycle{
    public void ride(){
       System.out.println("Ride Unicle");
    }
+   void balance(){
+      System.out.println("Unicycle balance");
+   }
 }
 
 
@@ -36,6 +42,9 @@ class Bicycle extends Cycle{
    }
    public void ride(){
       System.out.println("Ride Bicycle");
+   }
+   void balance(){
+      System.out.println("Bicycle balance");
    }
 }
 

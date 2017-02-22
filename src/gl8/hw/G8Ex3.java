@@ -4,6 +4,8 @@ public class G8Ex3{
    public static void main(String[] args){
       Base t = new Test();
       t.print();
+      Base1 t1 = new Test1();
+      t1.print();
    }
 }
 
@@ -17,11 +19,11 @@ abstract class Base{
 class Test extends Base{
    int i = 5;
    void print(){
-      System.out.println("Var = " + 5);
+      System.out.println("Var = " + i);
    }
 }
 class Base1{
-   Base(){
+   Base1(){
       print();
    }
    void print(){
@@ -29,8 +31,9 @@ class Base1{
    };
 }
 
-class Test1 extends Base{
+class Test1 extends Base1{
    int i = 5;
    void print(){
-      System.out.println("Var = " + 5);
+      System.out.println("Var = " + i);
    }
+}

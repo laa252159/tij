@@ -22,20 +22,21 @@ class Leg{
    }
 }
 
-class Grizun {
+abstract class Grizun {
   Leg l;
   Grizun(Leg leg){
       this.l = leg;
       System.out.println("Grizun constructor");
   }
-  void play(String n) { System.out.println("Rodent.play() " + n); }
+  abstract void play(String n);
   public String toString() { return this.getClass().getSimpleName(); }
-  void feed() { System.out.println("Feed Rodent"); }
+  abstract void feed();
 }
 
 class Mouse extends Grizun {
   Leg l;
   Mouse(Leg leg){
+      super(leg);
       this.l = leg;
       System.out.println("Mouse constructor");
   }
@@ -47,12 +48,17 @@ class Mouse extends Grizun {
 class Hamster extends Grizun {
   Leg l;
   Hamster(Leg leg){
+      super(leg);
       this.l = leg;
       System.out.println(" constructor");
   }
   void play(String n) { System.out.println("Hamster.play() " + n); }
   public String toString() { return this.getClass().getSimpleName(); }
   void feed() { System.out.println("Adjusting Percussion"); }
+}
+
+abstract class Test{
+
 }
 
 public class Rodent {
@@ -70,13 +76,14 @@ public class Rodent {
    List<Grizun> animals = new LinkedList<>();
    for(int i = 0 ; i < 3; i++){
       int num = random.nextInt(2);
+      System.out.println(num);
       switch(num){
          default:
-	 case 0: animals.add(new Grizun()); break; 
-	 case 1: animals.add(new Mouse()); break; 
-	 case 2: animals.add(new Hamster()); break; 
+	 case 0: animals.add(new Mouse(new Leg("right"))); break; 
+	 case 1: animals.add(new Hamster(new Leg("left"))); break; 
       }
    }
     peeAll(animals);
   }
+  // Test t = new Test();
 } 

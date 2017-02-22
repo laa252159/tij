@@ -20,3 +20,17 @@ class Test extends Base{
       System.out.println("Var = " + 5);
    }
 }
+class Base1{
+   Base(){
+      print();
+   }
+   void print(){
+      System.out.println("base1");
+   };
+}
+
+class Test1 extends Base{
+   int i = 5;
+   void print(){
+      System.out.println("Var = " + 5);
+   }

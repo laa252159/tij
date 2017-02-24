@@ -4,15 +4,18 @@ package interfaces.music5;
 import polymorphism.music.Note;
 import static net.mindview.util.Print.*;
 
-interface Instrument {
-  // Compile-time constant:
-  int VALUE = 5; // static & final
-  // Cannot have method definitions:
-  void play(Note n); // Automatically public
-  void adjust();
+interface Playable{
+  void play(Note n);
 }
 
-class Wind implements Instrument {
+abstract class Instrument implements Playable{
+  // Compile-time constant:
+  public static final int VALUE = 5; // static & final
+  // Cannot have method definitions:
+  abstract void adjust();
+}
+
+class Wind extends Instrument {
   public void play(Note n) {
     print(this + ".play() " + n);
   }
@@ -20,7 +23,7 @@ class Wind implements Instrument {
   public void adjust() { print(this + ".adjust()"); }
 }
 
-class Percussion implements Instrument {
+class Percussion extends Instrument {
   public void play(Note n) {
     print(this + ".play() " + n);
   }
@@ -28,7 +31,7 @@ class Percussion implements Instrument {
   public void adjust() { print(this + ".adjust()"); }
 }
 
-class Stringed implements Instrument {
+class Stringed extends Instrument {
   public void play(Note n) {
     print(this + ".play() " + n);
   }
@@ -47,7 +50,7 @@ class Woodwind extends Wind {
 public class Music5 {
   // Doesn't care about type, so new types
   // added to the system still work right:
-  static void tune(Instrument i) {
+  static void tune(Playable i) {
     // ...
     i.play(Note.MIDDLE_C);
   }

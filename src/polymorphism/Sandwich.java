@@ -3,6 +3,10 @@
 package polymorphism;
 import static net.mindview.util.Print.*;
 
+interface FastFood{
+   void eat();
+}
+
 class Pickle{
   Pickle(){
      print("Pickle");
@@ -34,14 +38,17 @@ class PortableLunch extends Lunch {
   PortableLunch() { print("PortableLunch()");}
 }
 
-public class Sandwich extends PortableLunch {
+public class Sandwich extends PortableLunch implements FastFood {
+  public void eat(){
+     System.out.println("Eat!!!");
+  }
   private Bread b = new Bread();
   private Cheese c = new Cheese();
   private Lettuce l = new Lettuce();
   public Sandwich() { print("Sandwich()"); }
   public static void main(String[] args) {
-    new Sandwich();
-    new Sandwich();
+    new Sandwich().eat();
+    new Sandwich().eat();
 
   }
 } /* Output:

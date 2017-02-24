@@ -22,39 +22,32 @@ class Leg{
    }
 }
 
-abstract class Grizun {
-  Leg l;
-  Grizun(Leg leg){
-      this.l = leg;
-      System.out.println("Grizun constructor");
-  }
-  abstract void play(String n);
-  public String toString() { return this.getClass().getSimpleName(); }
-  abstract void feed();
+interface Grizun {
+  void play(String n);
+  String toString();
+  void feed();
 }
 
-class Mouse extends Grizun {
+class Mouse implements Grizun {
   Leg l;
   Mouse(Leg leg){
-      super(leg);
       this.l = leg;
       System.out.println("Mouse constructor");
   }
-  void play(String n) { System.out.println("Mouse.play() " + n); }
+  public void play(String n) { System.out.println("Mouse.play() " + n); }
   public String toString() { return this.getClass().getSimpleName(); }
-  void feed() { System.out.println("Feed Mouse"); }
+  public void feed() { System.out.println("Feed Mouse"); }
 }	
 
-class Hamster extends Grizun {
+class Hamster implements Grizun {
   Leg l;
   Hamster(Leg leg){
-      super(leg);
       this.l = leg;
       System.out.println(" constructor");
   }
-  void play(String n) { System.out.println("Hamster.play() " + n); }
+  public void play(String n) { System.out.println("Hamster.play() " + n); }
   public String toString() { return this.getClass().getSimpleName(); }
-  void feed() { System.out.println("Adjusting Percussion"); }
+  public void feed() { System.out.println("Adjusting Percussion"); }
 }
 
 abstract class Test{

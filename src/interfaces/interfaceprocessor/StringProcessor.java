@@ -13,6 +13,7 @@ public abstract class StringProcessor implements Processor{
     Apply.process(new Upcase(), s);
     Apply.process(new Downcase(), s);
     Apply.process(new Splitter(), s);
+    Apply.process(new SwitchLetters(), s);
   }
 }	
 
@@ -25,6 +26,24 @@ class Upcase extends StringProcessor {
 class Downcase extends StringProcessor {
   public String process(Object input) {
     return ((String)input).toLowerCase();
+  }
+}
+
+class SwitchLetters extends StringProcessor{
+  public String process(Object input) {
+     String decoded = action(input);
+     System.out.println(action(decoded));
+     return decoded;
+  }
+
+  private String action(Object input){
+    char[] chs = ((String)input).toCharArray();
+    for(int i = 0; i < chs.length - 1; i+=2){
+       char tmp = chs[i];
+       chs[i] = chs[i+1];
+       chs[i+1] = tmp;
+    }
+    return new String(chs);
   }
 }
 

@@ -29,10 +29,12 @@ interface A{
 
 interface B1 extends A{
   void act1();
+  void act3();
 }
 
 interface B2 extends A{
   void act2();
+  void act3();
 }
 
 

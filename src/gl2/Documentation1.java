@@ -1,3 +1,5 @@
+package gl2;
+
 /**Comment for Class*/
 public class Documentation1{
    /**Comment for variable*/

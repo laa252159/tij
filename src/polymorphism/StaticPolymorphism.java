@@ -1,5 +1,5 @@
 //: polymorphism/StaticPolymorphism.java
-// Static methods are not polymorphic.
+// Static1 methods are not polymorphic.
 
 class StaticSuper {
   public static String staticGet() {

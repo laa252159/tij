@@ -1,4 +1,4 @@
-package src.hw.reusing;
+package hw.reusing;
 
 class Cleanser{
    private String s = "Cleanser";

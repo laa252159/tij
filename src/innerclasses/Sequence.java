@@ -29,6 +29,9 @@ public class Sequence {
     public boolean end() { return i == items.length; }
     public Object current() { return items[i]; }
     public void next() { if(i < items.length) i++; }
+    public Sequence getParent(){
+       return Sequence.this;
+    }
   }
   public Selector selector() {
     return new SequenceSelector();
@@ -69,7 +72,18 @@ public class Sequence {
       }
       selector.next();
     }
+    OuterClass.InnerClass oi = (new OuterClass()).new InnerClass();
   }
-} /* Output:
+}
+
+class OuterClass {
+   public class InnerClass {
+      InnerClass(){
+         System.out.println("Object " + this.getClass() + " made");
+      }
+   }
+}
+
+/* Output:
 0 1 2 3 4 5 6 7 8 9
 *///:~

@@ -1,6 +1,6 @@
 package gl10.hw.ex7_1;
 
-public class MainClass{
+class MainClassSecond{
    public Moveable act(){
       class Mover implements Moveable {
          public void move(){
@@ -10,11 +10,27 @@ public class MainClass{
       return new Mover();
    }
 
-   public static void main(String[] args){
+   public Moveable innerAct(){
+      return new InnerMover();
+   }
+   
+   private class InnerMover implements Moveable{
+      public void move(){
+         System.out.println("Inner movement");
+      }
+   }
+
+ /*  public static void main(String[] args){
       Moveable m = new MainClass().act();
       m.move();
-   }
+   }*/
 }
+
+public class MainClass{
+   public static void main(String[] args){
+      new MainClassSecond().innerAct().move();
+   }
+} 
 
 
 interface Moveable {

@@ -10,18 +10,6 @@ interface DropFabric {
    Dropable getFortune();
 }
 
-class CoinDropableFabric implements DropFabric {
-   public Dropable getFortune(){
-       return new Coin();
-   }
-}
-
-class CubeDropableFabric implements DropFabric {
-   public Dropable getFortune(){
-       return new Cube();
-   }
-}
-
 class Coin implements Dropable {
    Random r = new Random();
    int i = r.nextInt(2);
@@ -29,6 +17,12 @@ class Coin implements Dropable {
    public void drop(){
        System.out.println("Coin was dropped : " +  ans);
    }
+
+  static DropFabric f = new DropFabric() {
+    public Dropable getFortune(){
+        return new Coin();
+    }
+  };
 }
 
 
@@ -38,6 +32,13 @@ class Cube implements Dropable {
    public void drop(){
        System.out.println("Cube was dropped : " + ++i);
    }
+  
+ static DropFabric f = new DropFabric() {
+   public Dropable getFortune(){
+       return new Cube();
+   }
+ };
+
 }
 
 public class DropFortune {
@@ -47,8 +48,8 @@ public class DropFortune {
 
     public static void main(String[] args){
         for(int i =0 ; i < 50 ; i++){
-	   getFortune(new CoinDropableFabric());
-           getFortune(new CubeDropableFabric());
+	   getFortune(Coin.f);
+           getFortune(Cube.f);
 	}
     }
 }

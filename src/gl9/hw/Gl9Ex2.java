@@ -1,5 +1,5 @@
 package gl9.hw;
-
+//sss
 public class Gl9Ex2{
    public static void main(String[] args){
       System.out.println(Numbers.ONE);

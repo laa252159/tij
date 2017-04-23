@@ -1,7 +1,7 @@
 package gl10.hw.ex7_1;
 
 class MainClassSecond{
-   
+   // 
    public Moveable act(){
       class Mover implements Moveable {
          public void move(){

@@ -8,6 +8,12 @@ interface Selector {
   void next();
 }	
 
+interface ReverseSelector {
+  boolean end();
+  Object current();
+  void previous();
+}	
+
 public class Sequence {
   private Object[] items;
   private int next = 0;
@@ -33,9 +39,27 @@ public class Sequence {
        return Sequence.this;
     }
   }
+
+
+  private class SequenceReverseSelector implements ReverseSelector {
+    private int i = items.length - 1 ;
+    public boolean end() { return i == -1; }
+    public Object current() { return items[i]; }
+    public void previous() { if(i > -1) i--; }
+    public Sequence getParent(){
+       return Sequence.this;
+    }
+  }
+
+
   public Selector selector() {
     return new SequenceSelector();
   }
+
+  public ReverseSelector reverseSelector() {
+    return new SequenceReverseSelector();
+  }
+
 
   class MyType {
      String d = String.valueOf(new Date());
@@ -52,29 +76,26 @@ public class Sequence {
   }
 
   public static void main(String[] args) {
-    Sequence sequence = new Sequence(15);
+    Sequence sequence = new Sequence(10);
     for(int i = 0; i < 10; i++)
       sequence.add(Integer.toString(i));
-    MyType mt1 = sequence.getMyType();
-    MyType mt2 = sequence.getMyType();
-    MyType mt3 = sequence.getMyType();
-    MyType mt4 = sequence.getMyType();
-    sequence.add(mt1);
-    sequence.add(mt2);
-    sequence.add(mt3);
-    sequence.add(mt4);
-    Selector selector = sequence.selector();
-    while(!selector.end()) {
-      System.out.println(selector.current() + " ");
-         Object m = selector.current();
-      if(m instanceof MyType){
-         System.out.print(new Date() + "@@ " + ((MyType)m).getOuterString());
-      }
+   ReverseSelector reverseSelector = sequence.reverseSelector();
+   Selector selector = sequence.selector();
+
+   while(!reverseSelector.end()) {
+      System.out.println(reverseSelector.current() + " R");
+         //Object m = reversSselector.current();
+      reverseSelector.previous();
+   }
+      System.out.println("--------");
+   while(!selector.end()) {
+      System.out.println(selector.current() + " S");
+    //     Object m = selector.current();
       selector.next();
-    }
-    OuterClass.InnerClass oi = (new OuterClass()).new InnerClass();
+   }
   }
 }
+
 
 class OuterClass {
    public class InnerClass {

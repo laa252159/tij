@@ -10,12 +10,13 @@ public class Ex21 {
         b.addU(a.u());
         b.addU(a.u());
         b.addU(a.u());
-        b.addU(a.u());
+        System.out.println("ACT 1");
         b.act();
-//       b.addU(a.u());
-//       b.act();
-//       b.delete(0);
-//       b.delete(3);
+
+        b.delete(0);
+        b.delete(2);
+        System.out.println("ACT 2");
+        b.act();
 
     }
 }
@@ -49,7 +50,7 @@ class A {
             private int id = getCounter();
 
             public void a() {
-               System.out.println("a" + id + new Date());
+                System.out.println("a" + id + new Date());
             }
 
             public void b() {
@@ -79,7 +80,7 @@ class B {
 
     public void delete(int position) {
         for (int i = 0; i < us.length; i++) {
-            if (i == position - 1) {
+            if (i == position) {
                 us[i] = null;
             }
         }
@@ -87,6 +88,10 @@ class B {
 
     public void act() throws InterruptedException {
         for (U u : us) {
+            if (u == null) {
+                System.out.println("NULL");
+                continue;
+            }
             u.a();
             Thread.currentThread().sleep(1000);
             u.b();

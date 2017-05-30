@@ -1,3 +1,4 @@
+package innerclasses;
 //: innerclasses/GreenhouseControls.java
 // This produces a specific application of the
 // control system, all in a single class. Inner
@@ -24,6 +25,27 @@ public class GreenhouseControls extends Controller {
       light = false;
     }
     public String toString() { return "Light is off"; }
+  }
+
+
+  private boolean wind = false;
+  public class WindOn extends Event {
+    public WindOn(long delayTime) { super(delayTime); }
+    public void action() {
+      // Put hardware control code here to
+      // physically wind on.
+      light = true;
+    }
+    public String toString() { return "Wind is on"; }
+  }	
+  public class WindOff extends Event {
+    public WindOff(long delayTime) { super(delayTime); }
+    public void action() {
+      // Put hardware control code here to
+      // physically wind off.
+      light = false;
+    }
+    public String toString() { return "Wind is off"; }
   }
   private boolean water = false;
   public class WaterOn extends Event {

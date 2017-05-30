@@ -1,3 +1,4 @@
+package innerclasses;
 //: innerclasses/GreenhouseController.java
 // Configure and execute the greenhouse system.
 // {Args: 5000}
@@ -15,7 +16,9 @@ public class GreenhouseController {
       gc.new LightOff(400),
       gc.new WaterOn(600),
       gc.new WaterOff(800),
-      gc.new ThermostatDay(1400)
+      gc.new ThermostatDay(1400),
+      gc.new WindOn(2100),
+      gc.new WindOff(2400)
     };	
     gc.addEvent(gc.new Restart(2000, eventList));
     if(args.length == 1)

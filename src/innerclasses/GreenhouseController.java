@@ -6,7 +6,7 @@ import innerclasses.controller.*;
 
 public class GreenhouseController {
   public static void main(String[] args) {
-    GreenhouseControls gc = new GreenhouseControls();
+    GreenhouseControlsExtension gc = new GreenhouseControlsExtension();
     // Instead of hard-wiring, you could parse
     // configuration information from a text file here:
     gc.addEvent(gc.new Bell(900));
@@ -18,12 +18,14 @@ public class GreenhouseController {
       gc.new WaterOff(800),
       gc.new ThermostatDay(1400),
       gc.new WindOn(2100),
-      gc.new WindOff(2400)
+      gc.new WindOff(2400),
+      gc.new MoistOn(3000),
+      gc.new MoistOff(3100)
     };	
     gc.addEvent(gc.new Restart(2000, eventList));
     if(args.length == 1)
       gc.addEvent(
-        new GreenhouseControls.Terminate(
+        new GreenhouseControlsExtension.Terminate(
           new Integer(args[0])));
     gc.run();
   }

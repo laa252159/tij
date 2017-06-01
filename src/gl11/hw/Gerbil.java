@@ -1,5 +1,7 @@
 package gl11.hw;
 
+import java.util.*;
+
 public class Gerbil {
    public Gerbil(int num){
       this.gerbilNumber = num;
@@ -11,7 +13,7 @@ public class Gerbil {
    }
 
    public static void main(String[] args){
-      List<Gerbil> gerbils = new ArrayList<>();
+      List<Gerbil> gerbils = new ArrayList<Gerbil>();
       gerbils.add(new Gerbil(1));
       gerbils.add(new Gerbil(2));
       gerbils.add(new Gerbil(3));

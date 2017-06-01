@@ -1,7 +1,8 @@
 
 package innerclasses;
 // Holds a sequence of Objects.
-import java.util.Date;
+import java.util.*;
+
 interface Selector {
   boolean end();
   Object current();
@@ -15,26 +16,25 @@ interface ReverseSelector {
 }	
 
 public class Sequence {
-  private Object[] items;
+  private List<Object> items;
   private int next = 0;
   
   private String strSeq;
 
   public Sequence(int size) { 
-     items = new Object[size]; 
+     items = new ArrayList<Object>(size); 
      strSeq = "SsssSsss";
   }
   public void add(Object x) {
-    if(next < items.length)
-      items[next++] = x;
+    items.add(x);
   }
 
 
   private class SequenceSelector implements Selector {
     private int i = 0;
-    public boolean end() { return i == items.length; }
-    public Object current() { return items[i]; }
-    public void next() { if(i < items.length) i++; }
+    public boolean end() { return i == items.size(); }
+    public Object current() { return items.get(i); }
+    public void next() { if(i < items.size()) i++; }
     public Sequence getParent(){
        return Sequence.this;
     }
@@ -42,9 +42,9 @@ public class Sequence {
 
 
   private class SequenceReverseSelector implements ReverseSelector {
-    private int i = items.length - 1 ;
+    private int i = items.size() - 1 ;
     public boolean end() { return i == -1; }
-    public Object current() { return items[i]; }
+    public Object current() { return items.get(i); }
     public void previous() { if(i > -1) i--; }
     public Sequence getParent(){
        return Sequence.this;

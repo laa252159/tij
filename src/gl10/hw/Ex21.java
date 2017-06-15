@@ -1,6 +1,7 @@
 package gl10.hw;
 
 
+import java.util.Arrays;
 import java.util.Date;
 
 public class Ex21 {
@@ -12,7 +13,7 @@ public class Ex21 {
         b.addU(a.u());
         System.out.println("ACT 1");
         b.act();
-
+        Arrays.toString(new boolean[]{true, true});
         b.delete(0);
         b.delete(2);
         System.out.println("ACT 2");

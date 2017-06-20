@@ -5,7 +5,6 @@ import java.util.*;
 
 public class Ex9 implements Iterable {
 	private List<Object> items;
-	private int next = 0;
 
 	private String strSeq;
 

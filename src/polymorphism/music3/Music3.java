@@ -60,7 +60,7 @@ public class Music3 {
   public static void main(String[] args) {
    Random random = new Random();
    // Upcasting during addition to the array:
-   List<Instrument> orchestra = new LinkedList<>();
+   List<Instrument> orchestra = new LinkedList<Instrument>();
    for(int i = 0 ; i < 10; i++){
       int num = random.nextInt(6);
       switch(num){

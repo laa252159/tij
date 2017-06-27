@@ -69,7 +69,7 @@ public class Ex10 {
   public static void main(String[] args) {
    Random random = new Random();
    // Upcasting during addition to the array:
-   List<Grizun> animals = new ArrayList<>();
+   List<Grizun> animals = new ArrayList<Grizun>();
    for(int i = 0 ; i < 10; i++){
       int num = random.nextInt(2);
       System.out.println(num);

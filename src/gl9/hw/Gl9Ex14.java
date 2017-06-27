@@ -19,7 +19,7 @@ public class Gl9Ex14 extends GAbstr{
       System.out.println("act3");
    }
    
-   static void a(A a){
+   static void a(AA a){
       a.act1();
    }
 
@@ -54,7 +54,7 @@ interface C {
    void act2();
 }
 
-interface D extends A,B,C {
+interface D extends AA,B,C {
    void act3();
 }
 

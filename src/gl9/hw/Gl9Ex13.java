@@ -21,24 +21,24 @@ public class Gl9Ex13 implements C{
   }
 }
 
-interface A{
+interface AA {
   void act1();
   void act2();
   void act3();
 }
 
-interface B1 extends A{
+interface B1 extends AA {
   void act1();
   void act3();
 }
 
-interface B2 extends A{
+interface B2 extends AA {
   void act2();
   void act3();
 }
 
 
-interface C extends B1,B2{
+interface CC extends B1,B2{
   void act2();
 }
 

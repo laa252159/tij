@@ -66,7 +66,7 @@ public class Rodent {
   public static void main(String[] args) {
    Random random = new Random();
    // Upcasting during addition to the array:
-   List<Grizun> animals = new LinkedList<>();
+   List<Grizun> animals = new LinkedList<Grizun>();
    for(int i = 0 ; i < 3; i++){
       int num = random.nextInt(2);
       System.out.println(num);

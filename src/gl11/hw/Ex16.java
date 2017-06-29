@@ -4,7 +4,7 @@ import java.util.*;
 import net.mindview.util.*;
 
 public class Ex16 {
-   private static Set<Character> possibleVowels = new TreeSet<String>(Arrays.asList(new String[]{"a","e","i","o","y","u"}));
+   private static Set<Character> possibleVowels = new TreeSet<Character>(Arrays.asList(new Character[]{'a','e','i','o','y','u'}));
    public static void main(String[] args){
        Set<String> allWords = new TreeSet<String>(new TextFile("holding/UniqueWords.java", "\\W+"));
        System.out.println(allWords);
@@ -13,8 +13,8 @@ public class Ex16 {
 
        for(String str : allWords){
           int wordCounter = 0;
-          for(String s : str.toArray()){
-	     if(isVoWel(s)){
+          for(Character ch : str.toCharArray()){
+	     if(isVoWel(ch)){
 	        wordCounter++;  
 		allVowels++;
 	     }
@@ -26,7 +26,7 @@ public class Ex16 {
        System.out.println("Amount of all vowels : "  + allVowels);
    }
 
-   private static boolean isVoWel(String l){
-      return possibleVowels.contains(l);
+   private static boolean isVoWel(Character ch){
+      return possibleVowels.contains(ch);
    }
 }

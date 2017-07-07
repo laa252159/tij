@@ -19,6 +19,7 @@ public class Ex16 {
 		allVowels++;
 	     }
 	  }
+	  System.out.println("Word : " + str + " wovels : " + wordCounter);
 	  vowelsInWord.add(wordCounter);
        }
 

@@ -1,4 +1,6 @@
-//: holding/ArrayIsNotIterable.java
+package holding;//: holding/ArrayIsNotIterable.java
+import net.mindview.util.CountingGenerator;
+
 import java.util.*;
 
 public class ArrayIsNotIterable {
@@ -9,6 +11,9 @@ public class ArrayIsNotIterable {
   public static void main(String[] args) {
     test(Arrays.asList(1, 2, 3));
     String[] strings = { "A", "B", "C" };
+    for(String str : strings){
+
+    }
     // An array works in foreach, but it's not Iterable:
     //! test(strings);
     // You must explicitly convert it to an Iterable:

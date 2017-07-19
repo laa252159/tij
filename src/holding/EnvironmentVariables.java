@@ -1,4 +1,4 @@
-//: holding/EnvironmentVariables.java
+package holding;//: holding/EnvironmentVariables.java
 import java.util.*;
 
 public class EnvironmentVariables {
@@ -7,5 +7,9 @@ public class EnvironmentVariables {
       System.out.println(entry.getKey() + ": " +
         entry.getValue());
     }
+  }
+
+  public String fo(){
+    return "";
   }
 } /* (Execute to see output) *///:~

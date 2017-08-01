@@ -6,7 +6,7 @@ public class Ex3 {
 		try {
 			System.out.println(vals[3]);
 			throw new MyException("dd");
-		} catch (ArrayIndexOutOfBoundsException ex){
+		} catch (ArrayIndexOutOfBoundsException ex) {
 			System.out.println(ex);
 		} catch (MyException me) {
 			System.out.println(me.getStr());

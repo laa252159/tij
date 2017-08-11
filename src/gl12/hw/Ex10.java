@@ -12,11 +12,15 @@ class MyExClassOne {
     public void g() throws MyEx{
         throw new MyEx();
     }
-    public void f() throws MyExSecond{
+    public void f() {
         try {
-            g();
-        } catch (Exception e){
-            throw new MyExSecond(e);
+            try {
+                g();
+            } catch (Exception e) {
+                throw new MyExSecond(e);
+            }
+        }catch (MyExSecond ms){
+            throw new RuntimeException(ms);
         }
 
     }

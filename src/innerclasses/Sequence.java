@@ -26,6 +26,7 @@ public class Sequence {
      strSeq = "SsssSsss";
   }
   public void add(Object x) {
+      if (items.size() > 20) throw new RuntimeException("Слишком много айтемов");
     items.add(x);
   }
 
@@ -77,7 +78,7 @@ public class Sequence {
 
   public static void main(String[] args) {
     Sequence sequence = new Sequence(10);
-    for(int i = 0; i < 10; i++)
+    for(int i = 0; i < 25; i++)
       sequence.add(Integer.toString(i));
    ReverseSelector reverseSelector = sequence.reverseSelector();
    Selector selector = sequence.selector();

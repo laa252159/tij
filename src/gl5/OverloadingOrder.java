@@ -1,4 +1,4 @@
-package src.gl5;
+package gl5;
 
 public class OverloadingOrder{
    static void f(String s, int i){

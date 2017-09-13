@@ -1,6 +1,6 @@
 package hw.reusing;
 
-class Cleanser{
+class Cleanser2{
    private String s = "Cleanser";
    
    public void append(String a){

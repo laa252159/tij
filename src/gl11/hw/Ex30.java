@@ -1,6 +1,6 @@
 package gl11.hw;
 
-import holding.InterfaceVsIterator;
+//import holding.InterfaceVsIterator;
 import typeinfo.pets.Pet;
 import typeinfo.pets.Pets;
 
@@ -82,9 +82,9 @@ public class Ex30 implements Collection{
     }
 
     public static void main(String[] args) {
-        Ex30 c = new Ex30();
-        InterfaceVsIterator.display(c);
-        InterfaceVsIterator.display(c.iterator());
+//        Ex30 c = new Ex30();
+//        InterfaceVsIterator.display(c);
+//        InterfaceVsIterator.display(c.iterator());
     }
 
 }

@@ -1,6 +1,6 @@
-package src.gl5;
+package gl5;
 
-import static src.gl5.Print.*;
+import static gl5.Print.*;
 
 public class PrintTest{
    public static void main(String[] args){

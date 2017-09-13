@@ -1,4 +1,4 @@
-package src.hw;
+package hw;
 
 public class ClassLoading{
    static{

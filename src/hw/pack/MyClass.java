@@ -1,4 +1,4 @@
-package src.hw.pack;
+package hw.pack;
 
 public class MyClass{
    protected void print(){

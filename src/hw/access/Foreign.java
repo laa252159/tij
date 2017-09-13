@@ -1,6 +1,6 @@
-package src.hw.access;
+package hw.access;
 
-import src.hw.access.local.*;
+import hw.access.local.*;
 
 public class Foreign{
    public static void main(String[] args){

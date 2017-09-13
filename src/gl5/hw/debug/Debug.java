@@ -1,4 +1,4 @@
-package src.gl5.hw.debug;
+package gl5.hw.debug;
 
 public class Debug{
    public static void log(){

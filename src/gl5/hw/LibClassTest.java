@@ -1,6 +1,6 @@
-package src.gl5.hw;
+package gl5.hw;
 
-import src.gl5.hw.pack1.*;
+import gl5.hw.pack1.*;
 
 public class LibClassTest{
    public static void main(String[] args){

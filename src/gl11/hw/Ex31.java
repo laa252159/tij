@@ -52,6 +52,11 @@ class Generator implements Iterable<Shape> {
             public Shape next() {
                 return shapes.get(pos++);
             }
+
+            @Override
+            public void remove() {
+
+            }
         };
     }
 

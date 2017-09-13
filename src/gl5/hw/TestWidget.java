@@ -1,6 +1,6 @@
-package src.gl5.hw;
+package gl5.hw;
 
-import src.gl5.hw.access.Widget;
+import gl5.hw.access.Widget;
 
 public class TestWidget{
    public static void main(String[] args){

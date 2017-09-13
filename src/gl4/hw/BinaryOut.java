@@ -1,4 +1,4 @@
-package src.gl4.hw;
+package gl4.hw;
 
 public class BinaryOut{
    

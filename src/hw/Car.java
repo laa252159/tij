@@ -1,4 +1,4 @@
-package src.hw;
+package hw;
 
 class Engine{
    public void start(){}

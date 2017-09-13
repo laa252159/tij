@@ -1,4 +1,4 @@
-package src.gl3;
+package gl3;
 
 import static java.lang.System.*;
 

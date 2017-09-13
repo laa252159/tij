@@ -1,4 +1,4 @@
-package src.gl5.hw.pack1;
+package gl5.hw.pack1;
 
 public class Vector{
    public Vector(){

@@ -1,4 +1,4 @@
-package src.mylibs;
+package mylibs;
 
 public class Range{
    public static int[] range(int n){

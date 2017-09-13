@@ -1,4 +1,4 @@
-package src.hw;
+package hw;
 
 class Amphibian{
    public void swim(){

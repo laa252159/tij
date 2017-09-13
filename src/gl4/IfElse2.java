@@ -1,4 +1,4 @@
-package src.gl4;
+package gl4;
 
 public class IfElse2{
    static int test(int testval, int target){

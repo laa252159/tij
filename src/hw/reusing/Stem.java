@@ -1,4 +1,4 @@
-package src.hw.reusing;
+package hw.reusing;
 
 class Component1{
    Component1(int i){

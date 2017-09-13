@@ -1,4 +1,4 @@
-package src.gl2;
+package gl2;
 
 public class ShowProperties{
   public static void main(String[] args){

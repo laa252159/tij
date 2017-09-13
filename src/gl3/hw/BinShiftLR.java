@@ -1,4 +1,4 @@
-package src.gl3.hw;
+package gl3.hw;
 
 public class BinShiftLR{
    public static void main(String[] args){

@@ -1,4 +1,4 @@
-package src.gl5;
+package gl5;
 
 public class AutoboxingVarrargs{
    public static void f(Integer... args){

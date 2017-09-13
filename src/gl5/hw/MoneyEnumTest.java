@@ -1,4 +1,4 @@
-package src.gl5.hw;
+package gl5.hw;
 
 enum Money{
   RUB, DOL, YEN, FR, BEL_RUB, MARK

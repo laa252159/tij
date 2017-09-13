@@ -1,4 +1,4 @@
-package src.gl3;
+package gl3;
 
 public class StringOps{
    public static void main(String[] args){

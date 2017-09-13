@@ -1,4 +1,4 @@
-package src.hw.connections;
+package hw.connections;
 
 public class Connections{
   private boolean available = Math.random() > 0.5;

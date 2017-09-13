@@ -22,15 +22,15 @@ class Leg{
    }
 }
 
-interface Grizun {
+interface Grizun2 {
   void play(String n);
   String toString();
   void feed();
 }
 
-class Mouse implements Grizun {
+class Mouse2 implements Grizun2 {
   Leg l;
-  Mouse(Leg leg){
+  Mouse2(Leg leg){
       this.l = leg;
       System.out.println("Mouse constructor");
   }
@@ -39,7 +39,7 @@ class Mouse implements Grizun {
   public void feed() { System.out.println("Feed Mouse"); }
 }	
 
-class Hamster implements Grizun {
+class Hamster implements Grizun2 {
   Leg l;
   Hamster(Leg leg){
       this.l = leg;
@@ -66,17 +66,17 @@ public class Rodent {
   public static void main(String[] args) {
    Random random = new Random();
    // Upcasting during addition to the array:
-   List<Grizun> animals = new LinkedList<Grizun>();
+   List<Mouse2> animals = new LinkedList<>();
    for(int i = 0 ; i < 3; i++){
       int num = random.nextInt(2);
       System.out.println(num);
       switch(num){
          default:
-	 case 0: animals.add(new Mouse(new Leg("right"))); break; 
-	 case 1: animals.add(new Hamster(new Leg("left"))); break; 
+	 /*case 0: animals.add(new Mouse2(new Leg("right"))); break;
+	 case 1: animals.add(new Hamster(new Leg("left"))); break; */
       }
    }
-    peeAll(animals);
+//    peeAll(animals);
   }
   // Test t = new Test();
 } 

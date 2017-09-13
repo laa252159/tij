@@ -1,4 +1,4 @@
-package src.gl5.hw;
+package gl5.hw;
 
 public class InstanceCheck{
    String str = "first";

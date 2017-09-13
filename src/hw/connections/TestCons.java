@@ -1,4 +1,4 @@
-package src.hw.connections;
+package hw.connections;
 
 public class TestCons{
    public static void main(String[] args){

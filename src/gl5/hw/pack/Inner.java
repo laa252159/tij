@@ -1,4 +1,4 @@
-package src.gl5.hw.pack;
+package gl5.hw.pack;
 
 public class Inner{
    protected static void testProtected(){

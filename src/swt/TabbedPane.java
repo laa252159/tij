@@ -1,4 +1,4 @@
-//: swt/TabbedPane.java
+package swt;//: swt/TabbedPane.java
 // Placing SWT components in tabbed panes.
 import swt.util.*;
 import org.eclipse.swt.*;

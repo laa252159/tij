@@ -1,4 +1,4 @@
-package src.gl2.hw;
+package gl2.hw;
 
 public class HelloWorld{
 

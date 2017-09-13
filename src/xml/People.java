@@ -1,4 +1,4 @@
-//: xml/People.java
+package xml;//: xml/People.java
 // {Requires: nu.xom.Node; You must install
 // the XOM library from http://www.xom.nu }
 // {RunFirst: Person}

@@ -15,7 +15,7 @@ class Meteor extends AlertStatus {
   public void status() { print("Meteor"); }
 }
 
-class Stage {
+class Stage1 {
   private AlertStatus status = new Fire();
   public void change() { status = new Meteor(); }
   public void act() { status.status(); }
@@ -23,7 +23,7 @@ class Stage {
 
 public class Starship {
   public static void main(String[] args) {
-    Stage stage = new Stage();
+    Stage1 stage = new Stage1();
     stage.act();
     stage.change();
     stage.act();

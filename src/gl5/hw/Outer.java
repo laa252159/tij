@@ -1,6 +1,6 @@
-package src.gl5.hw;
+package gl5.hw;
 
-import src.gl5.hw.pack.Inner;
+import gl5.hw.pack.Inner;
 
 public class Outer extends Inner{
       public static void testPublic(){

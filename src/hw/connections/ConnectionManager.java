@@ -1,4 +1,4 @@
-package src.hw.connections;
+package hw.connections;
 
 class ConnectionManager{
    

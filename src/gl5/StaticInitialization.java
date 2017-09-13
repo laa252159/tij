@@ -1,4 +1,4 @@
-package src.gl5;
+package gl5;
 
 class Bowl{
    Bowl(int marker){

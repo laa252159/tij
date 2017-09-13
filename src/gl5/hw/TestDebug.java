@@ -1,7 +1,7 @@
-package src.gl5.hw;
+package gl5.hw;
 
-//import static src.gl5.hw.debug.Debug.*;
-import static src.gl5.hw.debugoff.Debug.*;
+//import static gl5.hw.debug.Debug.*;
+import static gl5.hw.debugoff.Debug.*;
 
 
 public class TestDebug{

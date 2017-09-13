@@ -1,4 +1,4 @@
-package src.gl3.hw;
+package gl2.hw;
 
 public class DataOnly{
 

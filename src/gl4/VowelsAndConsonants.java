@@ -1,4 +1,4 @@
-package src.gl4;
+package gl4;
 
 import java.util.*;
 

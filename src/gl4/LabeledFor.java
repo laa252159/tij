@@ -1,4 +1,4 @@
-package src.gl4;
+package gl4;
 
 public class LabeledFor{
    public static void main(String[] args){

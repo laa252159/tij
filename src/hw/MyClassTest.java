@@ -1,6 +1,6 @@
-package src.hw;
+package hw;
 
-import src.hw.pack.MyClass;
+import hw.pack.MyClass;
 
 class MyClassTest extends MyClass{
 

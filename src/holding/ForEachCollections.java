@@ -5,7 +5,7 @@ import java.util.*;
 public class ForEachCollections {
   public static void main(String[] args) {
     Collection<String> cs = new LinkedList<String>();
-    cs.addAll();
+    cs.addAll(null);
     Collections.addAll(cs,
       "Take the long way home".split(" "));
     for(String s : cs)

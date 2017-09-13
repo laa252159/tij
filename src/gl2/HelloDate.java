@@ -1,4 +1,4 @@
-package src.gl2;
+package gl2;
 
 import java.util.Date;
 

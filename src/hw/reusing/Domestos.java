@@ -1,4 +1,4 @@
-package src.hw.reusing;
+package hw.reusing;
 
 public class Domestos extends Detergent{
    public void scrub(){

@@ -1,4 +1,4 @@
-package src.hw.access.local;
+package hw.access.local;
 
 public class PackageClass{
    public PackageClass(){

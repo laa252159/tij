@@ -120,3 +120,13 @@ Caused by: java.lang.NullPointerException
         at DynamicFields.setField(DynamicFields.java:66)
         ... 1 more
 *///:~
+
+
+class Cat {
+  private int i;
+  
+  public void doSmth(){
+    Cat cat = new Cat();
+    cat.i = 2;
+  }
+}

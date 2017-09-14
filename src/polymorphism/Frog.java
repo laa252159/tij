@@ -82,8 +82,12 @@ public class Frog extends Amphibian {
   }
   public static void main(String[] args) {
     Frog frog = new Frog();
-    print("Bye!");
-    frog.dispose();
+    try {
+      print("Bye!");
+      return;
+    } finally {
+      frog.dispose();
+    }
   }
 } /* Output:
 Creating Characteristic is alive

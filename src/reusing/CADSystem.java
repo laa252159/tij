@@ -70,6 +70,7 @@ public class CADSystem extends Shape {
     CADSystem x = new CADSystem(47);
     try {
       // Code and exception handling...
+      return;
     } finally {
       x.dispose();
     }

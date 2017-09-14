@@ -5,7 +5,7 @@ public class OnOffSwitch {
   private static Switch sw = new Switch();
   public static void f()
   throws OnOffException1,OnOffException2 {
-    throw new RuntimeException(); //done CH1 Ex15
+    throw new RuntimeException(); //done CH1  Ex15
   }
   public static void main(String[] args) {
     try {

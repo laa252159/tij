@@ -36,7 +36,9 @@ public class StormyInning extends Inning implements Storm {
   public StormyInning(String s)
     throws Foul, BaseballException {}
   // Regular methods must conform to base class:
- void walk() throws UmpireExceptionTwo {} //Compile error
+ public void walk() throws UmpireExceptionTwo {
+      throw new UmpireExceptionTwo();
+ } //Compile error
   // Interface CANNOT add exceptions to existing
   // methods from the base class:
 //! public void event() throws RainedOut {}
@@ -65,6 +67,7 @@ public class StormyInning extends Inning implements Storm {
       // What happens if you upcast?
       Inning i = new StormyInning();
       i.atBat();
+      i.walk();
       // You must catch the exceptions from the
       // base-class version of the method:
     } catch(Strike e) {
@@ -75,6 +78,8 @@ public class StormyInning extends Inning implements Storm {
       System.out.println("Rained out");
     } catch(BaseballException e) {
       System.out.println("Generic baseball exception");
+    } catch (UmpireException e){
+        System.out.println(e);
     }
   }
 } ///:~

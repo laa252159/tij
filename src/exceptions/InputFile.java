@@ -41,4 +41,9 @@ public class InputFile {
       throw new RuntimeException("in.close() failed");
     }
   }
+
+  @Override
+  protected void finalize() throws Throwable {
+    System.out.println("finalize");
+  }
 } ///:~

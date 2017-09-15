@@ -36,11 +36,11 @@ public class LostMessage {
       try {
         lm.important();
       } finally {
-        try {
-          lm.dtrivial();
-        } finally {
-          throw new ThirdException();
-        }
+          try {
+              lm.dtrivial();
+          } catch (Exception e){
+              System.out.println(e);
+          }
       }
     } catch(Exception e) {
       System.out.println(e);

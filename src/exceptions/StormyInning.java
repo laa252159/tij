@@ -7,13 +7,16 @@ class BaseballException extends Exception {}
 class Foul extends BaseballException {}
 class Strike extends BaseballException {}
 
+class UmpireException extends Exception {}
+class UmpireExceptionTwo extends UmpireException {}
+
 abstract class Inning {
   public Inning() throws BaseballException {}
   public void event() throws BaseballException {
     // Doesn't actually have to throw anything
   }
   public abstract void atBat() throws Strike, Foul;
-  public void walk() {} // Throws no checked exceptions
+  public void walk() throws UmpireException {}
 }
 
 class StormException extends Exception {}
@@ -21,7 +24,7 @@ class RainedOut extends StormException {}
 class PopFoul extends Foul {}
 
 interface Storm {
-  public void event() throws RainedOut;
+  public void event() throws RainedOut, UmpireException;
   public void rainHard() throws RainedOut;
 }
 
@@ -33,7 +36,7 @@ public class StormyInning extends Inning implements Storm {
   public StormyInning(String s)
     throws Foul, BaseballException {}
   // Regular methods must conform to base class:
-//! void walk() throws PopFoul {} //Compile error
+ void walk() throws UmpireExceptionTwo {} //Compile error
   // Interface CANNOT add exceptions to existing
   // methods from the base class:
 //! public void event() throws RainedOut {}
@@ -44,7 +47,8 @@ public class StormyInning extends Inning implements Storm {
   // even if the base version does:
   public void event() {}
   // Overridden methods can throw inherited exceptions:
-  public void atBat() throws PopFoul {}
+  public void atBat() throws PopFoul {
+  }
   public static void main(String[] args) {
     try {
       StormyInning si = new StormyInning();

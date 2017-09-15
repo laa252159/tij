@@ -9,24 +9,38 @@ class VeryImportantException extends Exception {
 
 class HoHumException extends Exception {
   public String toString() {
-    return "A trivial exception";
+    return "A HoHum exception";
+  }
+}
+
+class ThirdException extends Exception {
+  @Override
+  public String toString() {
+    return "Third exception";
   }
 }
 
 public class LostMessage {
-  void f() throws VeryImportantException {
+  void important() throws VeryImportantException {
     throw new VeryImportantException();
   }
-  void dispose() throws HoHumException {
+  void dtrivial() throws HoHumException {
     throw new HoHumException();
+  }
+  void fird() throws ThirdException {
+    throw new ThirdException();
   }
   public static void main(String[] args) {
     try {
       LostMessage lm = new LostMessage();
       try {
-        lm.f();
+        lm.important();
       } finally {
-        lm.dispose();
+        try {
+          lm.dtrivial();
+        } finally {
+          throw new ThirdException();
+        }
       }
     } catch(Exception e) {
       System.out.println(e);

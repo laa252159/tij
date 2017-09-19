@@ -5,7 +5,7 @@ import java.util.*;
 
 public class InfiniteRecursionA {
   public String toString() {
-    return " InfiniteRecursion address: " + this + "\n";
+    return " InfiniteRecursion address: " + super.toString() + "\n";
   }
   public static void main(String[] args) {
     List<InfiniteRecursionA> v =

@@ -9,7 +9,7 @@ public class Gl9Ex13 implements C{
   public void act2(){
      System.out.println("act2");
   }
-  @Override
+
   public void act3(){
      System.out.println("act3");
   }
@@ -17,7 +17,7 @@ public class Gl9Ex13 implements C{
     C x = new Gl9Ex13();
     x.act1();
     x.act2();
-    x.act3();
+
   }
 }
 

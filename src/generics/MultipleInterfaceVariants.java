@@ -3,6 +3,6 @@ package generics;//: generics/MultipleInterfaceVariants.java
 
 interface Payable<T> {}
 
-class Employee implements Payable<Employee> {}
-class Hourly extends Employee
-  implements Payable<Hourly> {} ///:~
+class Employee1 implements Payable<Employee1> {}
+//class Hourly extends Employee1
+//  implements Payable<Hourly> {} ///:~

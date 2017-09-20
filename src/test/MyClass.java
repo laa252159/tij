@@ -2,7 +2,7 @@ package test;
 
 public class MyClass {
     class NonStaticClass {
-        private static int a;
+        private int a;
     }
     static class StaticClass {
         private static int a;

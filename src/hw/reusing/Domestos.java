@@ -5,6 +5,9 @@ public class Domestos extends Detergent{
       append(" Domestos.scrub()");
    }
 
+   private void append(String s) {
+   }
+
    public void sterilize(){
       append(" sterilise()");
    } 

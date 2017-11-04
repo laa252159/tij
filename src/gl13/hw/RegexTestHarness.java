@@ -1,29 +1,15 @@
 package gl13.hw;
 
-import java.util.Formatter;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 public class RegexTestHarness {
-    public static void main(String[] args) {
-        Pattern pattern =
-                Pattern.compile("^[A-Z].+\\.$");
-        Matcher matcher =
-                pattern.matcher("Gogo to play CS.");
-        Formatter formatter = new Formatter(System.out);
-        if (matcher.find()){
-            formatter.format("I found the text" +
-                            " \"%s\" starting at " +
-                            "index %d and ending at index %d.%n",
-                    matcher.group(),
-                    matcher.start(),
-                    matcher.end());
-        } else {
-            System.out.println("Didn't find");
-        }
+
+    public static boolean matches(String text) {
+        return text.matches("\\p{javaUpperCase}.*\\.");
     }
-
-    ;
-
+    public static void main(String[] args) {
+        System.out.println(matches("This is correct."));
+        System.out.println(matches("bad sentence 1."));
+        System.out.println(matches("Bad sentence 2"));
+        System.out.println(matches("This is also correct..."));
+    }
 }
 

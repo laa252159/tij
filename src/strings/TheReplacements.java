@@ -11,7 +11,7 @@ import static net.mindview.util.Print.*;
 
 public class TheReplacements {
   public static void main(String[] args) throws Exception {
-    String s = TextFile.read("TheReplacements.java");
+    String s = TextFile.read("/Users/sanix/development/tij/src/strings/TheReplacements.java");
     // Match the specially commented block of text above:
     Matcher mInput =
       Pattern.compile("/\\*!(.*)!\\*/", Pattern.DOTALL)

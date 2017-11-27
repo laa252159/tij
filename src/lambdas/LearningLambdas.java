@@ -21,5 +21,7 @@ public class LearningLambdas {
         multiStatement.run();
         noArguments.run();
         oneArgument.actionPerformed(new ActionEvent(new Object(), 1, ""));
+        Thread thread = new Thread(noArguments);
+        thread.start();
     }
 }

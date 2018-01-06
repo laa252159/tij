@@ -148,6 +148,9 @@ private interface IntegerBiFunction extends BinaryOperator<Integer> {
 
 }
 
+    private interface IntegerBiFunctionTWO extends IntegerBiFunction {
+    }
+
 private void overloadedMethod(BinaryOperator<Integer> lambda) {
     System.out.print("BinaryOperator");
 }
@@ -155,6 +158,10 @@ private void overloadedMethod(BinaryOperator<Integer> lambda) {
 private void overloadedMethod(IntegerBiFunction lambda) {
     System.out.print("IntegerBinaryOperator");
 }
+
+    private void overloadedMethod(IntegerBiFunctionTWO lambda) {
+        System.out.print("IntegerBiFunctionTWO2");
+    }
     // END most_specific_bifunction
 
 //    @Test

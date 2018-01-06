@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.insightfullogic.java8.exercises.chapter3.StringExercisesTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0 sec <<< FAILURE! - in com.insightfullogic.java8.exercises.chapter3.StringExercisesTest
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE! - in com.insightfullogic.java8.exercises.chapter3.StringExercisesTest
 noStringReturnedForEmptyList(com.insightfullogic.java8.exercises.chapter3.StringExercisesTest)  Time elapsed: 0 sec  <<< ERROR!
 com.insightfullogic.java8.exercises.ExerciseNotCompletedException: Please remove this line of code and implement the exercise
 	at com.insightfullogic.java8.exercises.Exercises.replaceThisWithSolution(Exercises.java:6)

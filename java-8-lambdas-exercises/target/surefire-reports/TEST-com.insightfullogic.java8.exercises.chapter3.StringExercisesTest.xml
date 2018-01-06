@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.insightfullogic.java8.exercises.chapter3.StringExercisesTest" time="0" tests="5" errors="5" skipped="0" failures="0">
+<testsuite name="com.insightfullogic.java8.exercises.chapter3.StringExercisesTest" time="0.019" tests="5" errors="5" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2017.2.5"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -62,21 +62,21 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="noStringReturnedForEmptyList" classname="com.insightfullogic.java8.exercises.chapter3.StringExercisesTest" time="0">
+  <testcase name="noStringReturnedForEmptyList" classname="com.insightfullogic.java8.exercises.chapter3.StringExercisesTest" time="0.002">
     <error message="Please remove this line of code and implement the exercise" type="com.insightfullogic.java8.exercises.ExerciseNotCompletedException">com.insightfullogic.java8.exercises.ExerciseNotCompletedException: Please remove this line of code and implement the exercise
 	at com.insightfullogic.java8.exercises.Exercises.replaceThisWithSolution(Exercises.java:6)
 	at com.insightfullogic.java8.exercises.chapter3.StringExercises.mostLowercaseString(StringExercises.java:18)
 	at com.insightfullogic.java8.exercises.chapter3.StringExercisesTest.noStringReturnedForEmptyList(StringExercisesTest.java:31)
 </error>
   </testcase>
-  <testcase name="noLowercaseLettersInAnEmptyString" classname="com.insightfullogic.java8.exercises.chapter3.StringExercisesTest" time="0">
+  <testcase name="noLowercaseLettersInAnEmptyString" classname="com.insightfullogic.java8.exercises.chapter3.StringExercisesTest" time="0.001">
     <error message="Please remove this line of code and implement the exercise" type="com.insightfullogic.java8.exercises.ExerciseNotCompletedException">com.insightfullogic.java8.exercises.ExerciseNotCompletedException: Please remove this line of code and implement the exercise
 	at com.insightfullogic.java8.exercises.Exercises.replaceThisWithSolution(Exercises.java:6)
 	at com.insightfullogic.java8.exercises.chapter3.StringExercises.countLowercaseLetters(StringExercises.java:13)
 	at com.insightfullogic.java8.exercises.chapter3.StringExercisesTest.noLowercaseLettersInAnEmptyString(StringExercisesTest.java:16)
 </error>
   </testcase>
-  <testcase name="findsMostLowercaseString" classname="com.insightfullogic.java8.exercises.chapter3.StringExercisesTest" time="0">
+  <testcase name="findsMostLowercaseString" classname="com.insightfullogic.java8.exercises.chapter3.StringExercisesTest" time="0.001">
     <error message="Please remove this line of code and implement the exercise" type="com.insightfullogic.java8.exercises.ExerciseNotCompletedException">com.insightfullogic.java8.exercises.ExerciseNotCompletedException: Please remove this line of code and implement the exercise
 	at com.insightfullogic.java8.exercises.Exercises.replaceThisWithSolution(Exercises.java:6)
 	at com.insightfullogic.java8.exercises.chapter3.StringExercises.mostLowercaseString(StringExercises.java:18)
@@ -90,7 +90,7 @@
 	at com.insightfullogic.java8.exercises.chapter3.StringExercisesTest.countsLowercaseLetterExample(StringExercisesTest.java:21)
 </error>
   </testcase>
-  <testcase name="suppoertsNoLowercaseLetters" classname="com.insightfullogic.java8.exercises.chapter3.StringExercisesTest" time="0">
+  <testcase name="suppoertsNoLowercaseLetters" classname="com.insightfullogic.java8.exercises.chapter3.StringExercisesTest" time="0.015">
     <error message="Please remove this line of code and implement the exercise" type="com.insightfullogic.java8.exercises.ExerciseNotCompletedException">com.insightfullogic.java8.exercises.ExerciseNotCompletedException: Please remove this line of code and implement the exercise
 	at com.insightfullogic.java8.exercises.Exercises.replaceThisWithSolution(Exercises.java:6)
 	at com.insightfullogic.java8.exercises.chapter3.StringExercises.countLowercaseLetters(StringExercises.java:13)

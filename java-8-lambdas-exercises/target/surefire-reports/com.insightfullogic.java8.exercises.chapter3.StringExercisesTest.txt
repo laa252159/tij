@@ -1,20 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: com.insightfullogic.java8.exercises.chapter3.StringExercisesTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE! - in com.insightfullogic.java8.exercises.chapter3.StringExercisesTest
-noStringReturnedForEmptyList(com.insightfullogic.java8.exercises.chapter3.StringExercisesTest)  Time elapsed: 0 sec  <<< ERROR!
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.021 sec <<< FAILURE! - in com.insightfullogic.java8.exercises.chapter3.StringExercisesTest
+noStringReturnedForEmptyList(com.insightfullogic.java8.exercises.chapter3.StringExercisesTest)  Time elapsed: 0.002 sec  <<< ERROR!
 com.insightfullogic.java8.exercises.ExerciseNotCompletedException: Please remove this line of code and implement the exercise
 	at com.insightfullogic.java8.exercises.Exercises.replaceThisWithSolution(Exercises.java:6)
 	at com.insightfullogic.java8.exercises.chapter3.StringExercises.mostLowercaseString(StringExercises.java:18)
 	at com.insightfullogic.java8.exercises.chapter3.StringExercisesTest.noStringReturnedForEmptyList(StringExercisesTest.java:31)
 
-noLowercaseLettersInAnEmptyString(com.insightfullogic.java8.exercises.chapter3.StringExercisesTest)  Time elapsed: 0 sec  <<< ERROR!
+noLowercaseLettersInAnEmptyString(com.insightfullogic.java8.exercises.chapter3.StringExercisesTest)  Time elapsed: 0.001 sec  <<< ERROR!
 com.insightfullogic.java8.exercises.ExerciseNotCompletedException: Please remove this line of code and implement the exercise
 	at com.insightfullogic.java8.exercises.Exercises.replaceThisWithSolution(Exercises.java:6)
 	at com.insightfullogic.java8.exercises.chapter3.StringExercises.countLowercaseLetters(StringExercises.java:13)
 	at com.insightfullogic.java8.exercises.chapter3.StringExercisesTest.noLowercaseLettersInAnEmptyString(StringExercisesTest.java:16)
 
-findsMostLowercaseString(com.insightfullogic.java8.exercises.chapter3.StringExercisesTest)  Time elapsed: 0 sec  <<< ERROR!
+findsMostLowercaseString(com.insightfullogic.java8.exercises.chapter3.StringExercisesTest)  Time elapsed: 0.001 sec  <<< ERROR!
 com.insightfullogic.java8.exercises.ExerciseNotCompletedException: Please remove this line of code and implement the exercise
 	at com.insightfullogic.java8.exercises.Exercises.replaceThisWithSolution(Exercises.java:6)
 	at com.insightfullogic.java8.exercises.chapter3.StringExercises.mostLowercaseString(StringExercises.java:18)
@@ -26,7 +26,7 @@ com.insightfullogic.java8.exercises.ExerciseNotCompletedException: Please remove
 	at com.insightfullogic.java8.exercises.chapter3.StringExercises.countLowercaseLetters(StringExercises.java:13)
 	at com.insightfullogic.java8.exercises.chapter3.StringExercisesTest.countsLowercaseLetterExample(StringExercisesTest.java:21)
 
-suppoertsNoLowercaseLetters(com.insightfullogic.java8.exercises.chapter3.StringExercisesTest)  Time elapsed: 0 sec  <<< ERROR!
+suppoertsNoLowercaseLetters(com.insightfullogic.java8.exercises.chapter3.StringExercisesTest)  Time elapsed: 0.015 sec  <<< ERROR!
 com.insightfullogic.java8.exercises.ExerciseNotCompletedException: Please remove this line of code and implement the exercise
 	at com.insightfullogic.java8.exercises.Exercises.replaceThisWithSolution(Exercises.java:6)
 	at com.insightfullogic.java8.exercises.chapter3.StringExercises.countLowercaseLetters(StringExercises.java:13)

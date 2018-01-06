@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.insightfullogic.java8.examples.chapter4.TestOrder" time="0.004" tests="9" errors="0" skipped="0" failures="0">
+<testsuite name="com.insightfullogic.java8.examples.chapter4.TestOrder" time="0.01" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2017.2.5"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -64,11 +64,11 @@
   </properties>
   <testcase name="countsArtists[0]" classname="com.insightfullogic.java8.examples.chapter4.TestOrder" time="0"/>
   <testcase name="countsRunningTime[0]" classname="com.insightfullogic.java8.examples.chapter4.TestOrder" time="0"/>
-  <testcase name="countsTracks[0]" classname="com.insightfullogic.java8.examples.chapter4.TestOrder" time="0"/>
-  <testcase name="countsArtists[1]" classname="com.insightfullogic.java8.examples.chapter4.TestOrder" time="0"/>
+  <testcase name="countsTracks[0]" classname="com.insightfullogic.java8.examples.chapter4.TestOrder" time="0.001"/>
+  <testcase name="countsArtists[1]" classname="com.insightfullogic.java8.examples.chapter4.TestOrder" time="0.001"/>
   <testcase name="countsRunningTime[1]" classname="com.insightfullogic.java8.examples.chapter4.TestOrder" time="0.001"/>
-  <testcase name="countsTracks[1]" classname="com.insightfullogic.java8.examples.chapter4.TestOrder" time="0.001"/>
+  <testcase name="countsTracks[1]" classname="com.insightfullogic.java8.examples.chapter4.TestOrder" time="0.002"/>
   <testcase name="countsArtists[2]" classname="com.insightfullogic.java8.examples.chapter4.TestOrder" time="0.001"/>
-  <testcase name="countsRunningTime[2]" classname="com.insightfullogic.java8.examples.chapter4.TestOrder" time="0.001"/>
-  <testcase name="countsTracks[2]" classname="com.insightfullogic.java8.examples.chapter4.TestOrder" time="0"/>
+  <testcase name="countsRunningTime[2]" classname="com.insightfullogic.java8.examples.chapter4.TestOrder" time="0.002"/>
+  <testcase name="countsTracks[2]" classname="com.insightfullogic.java8.examples.chapter4.TestOrder" time="0.002"/>
 </testsuite>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.insightfullogic.java8.examples.chapter5.StringCollectorTest" time="0.017" tests="6" errors="0" skipped="0" failures="0">
+<testsuite name="com.insightfullogic.java8.examples.chapter5.StringCollectorTest" time="0.04" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2017.2.5"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -62,10 +62,10 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testCollectEmpty" classname="com.insightfullogic.java8.examples.chapter5.StringCollectorTest" time="0.001"/>
-  <testcase name="testCollectPrallel" classname="com.insightfullogic.java8.examples.chapter5.StringCollectorTest" time="0"/>
-  <testcase name="testAssociativityConstraint" classname="com.insightfullogic.java8.examples.chapter5.StringCollectorTest" time="0.001"/>
+  <testcase name="testCollectEmpty" classname="com.insightfullogic.java8.examples.chapter5.StringCollectorTest" time="0.002"/>
+  <testcase name="testCollectPrallel" classname="com.insightfullogic.java8.examples.chapter5.StringCollectorTest" time="0.001"/>
+  <testcase name="testAssociativityConstraint" classname="com.insightfullogic.java8.examples.chapter5.StringCollectorTest" time="0"/>
   <testcase name="testIdentityConstraint" classname="com.insightfullogic.java8.examples.chapter5.StringCollectorTest" time="0"/>
-  <testcase name="testCollectPrallelLargeDataSet" classname="com.insightfullogic.java8.examples.chapter5.StringCollectorTest" time="0.014"/>
+  <testcase name="testCollectPrallelLargeDataSet" classname="com.insightfullogic.java8.examples.chapter5.StringCollectorTest" time="0.036"/>
   <testcase name="testCollectSimple" classname="com.insightfullogic.java8.examples.chapter5.StringCollectorTest" time="0.001"/>
 </testsuite>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.insightfullogic.java8.answers.chapter3.StringExercisesTest" time="0.005" tests="5" errors="0" skipped="0" failures="0">
+<testsuite name="com.insightfullogic.java8.answers.chapter3.StringExercisesTest" time="0.024" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2017.2.5"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -62,9 +62,9 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="noStringReturnedForEmptyList" classname="com.insightfullogic.java8.answers.chapter3.StringExercisesTest" time="0"/>
-  <testcase name="noLowercaseLettersInAnEmptyString" classname="com.insightfullogic.java8.answers.chapter3.StringExercisesTest" time="0.004"/>
-  <testcase name="findsMostLowercaseString" classname="com.insightfullogic.java8.answers.chapter3.StringExercisesTest" time="0.001"/>
+  <testcase name="noStringReturnedForEmptyList" classname="com.insightfullogic.java8.answers.chapter3.StringExercisesTest" time="0.003"/>
+  <testcase name="noLowercaseLettersInAnEmptyString" classname="com.insightfullogic.java8.answers.chapter3.StringExercisesTest" time="0.009"/>
+  <testcase name="findsMostLowercaseString" classname="com.insightfullogic.java8.answers.chapter3.StringExercisesTest" time="0"/>
   <testcase name="countsLowercaseLetterExample" classname="com.insightfullogic.java8.answers.chapter3.StringExercisesTest" time="0"/>
-  <testcase name="suppoertsNoLowercaseLetters" classname="com.insightfullogic.java8.answers.chapter3.StringExercisesTest" time="0"/>
+  <testcase name="suppoertsNoLowercaseLetters" classname="com.insightfullogic.java8.answers.chapter3.StringExercisesTest" time="0.012"/>
 </testsuite>

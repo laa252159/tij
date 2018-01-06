@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.insightfullogic.java8.examples.chapter5.StringCombinerTest" time="0.005" tests="5" errors="0" skipped="0" failures="0">
+<testsuite name="com.insightfullogic.java8.examples.chapter5.StringCombinerTest" time="0" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2017.2.5"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -66,5 +66,5 @@
   <testcase name="mergeWithOther" classname="com.insightfullogic.java8.examples.chapter5.StringCombinerTest" time="0"/>
   <testcase name="add" classname="com.insightfullogic.java8.examples.chapter5.StringCombinerTest" time="0"/>
   <testcase name="twiceCallToString" classname="com.insightfullogic.java8.examples.chapter5.StringCombinerTest" time="0"/>
-  <testcase name="mergeSelf" classname="com.insightfullogic.java8.examples.chapter5.StringCombinerTest" time="0.005"/>
+  <testcase name="mergeSelf" classname="com.insightfullogic.java8.examples.chapter5.StringCombinerTest" time="0"/>
 </testsuite>

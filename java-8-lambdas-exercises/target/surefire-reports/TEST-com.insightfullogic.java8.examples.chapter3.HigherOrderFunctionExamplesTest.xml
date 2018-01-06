@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.insightfullogic.java8.examples.chapter3.HigherOrderFunctionExamplesTest" time="0.014" tests="13" errors="0" skipped="0" failures="0">
+<testsuite name="com.insightfullogic.java8.examples.chapter3.HigherOrderFunctionExamplesTest" time="0.011" tests="13" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2017.2.5"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -66,13 +66,13 @@
   <testcase name="imperativeStringsWithNumbers" classname="com.insightfullogic.java8.examples.chapter3.HigherOrderFunctionExamplesTest" time="0"/>
   <testcase name="collectToList" classname="com.insightfullogic.java8.examples.chapter3.HigherOrderFunctionExamplesTest" time="0"/>
   <testcase name="countUsingReduceFor" classname="com.insightfullogic.java8.examples.chapter3.HigherOrderFunctionExamplesTest" time="0"/>
-  <testcase name="expandedReduce" classname="com.insightfullogic.java8.examples.chapter3.HigherOrderFunctionExamplesTest" time="0.001"/>
-  <testcase name="streamsAnyMatch" classname="com.insightfullogic.java8.examples.chapter3.HigherOrderFunctionExamplesTest" time="0.001"/>
-  <testcase name="streamsMaxLength" classname="com.insightfullogic.java8.examples.chapter3.HigherOrderFunctionExamplesTest" time="0.006"/>
-  <testcase name="functionalStringsWithNumbers" classname="com.insightfullogic.java8.examples.chapter3.HigherOrderFunctionExamplesTest" time="0.002"/>
+  <testcase name="expandedReduce" classname="com.insightfullogic.java8.examples.chapter3.HigherOrderFunctionExamplesTest" time="0"/>
+  <testcase name="streamsAnyMatch" classname="com.insightfullogic.java8.examples.chapter3.HigherOrderFunctionExamplesTest" time="0.002"/>
+  <testcase name="streamsMaxLength" classname="com.insightfullogic.java8.examples.chapter3.HigherOrderFunctionExamplesTest" time="0.001"/>
+  <testcase name="functionalStringsWithNumbers" classname="com.insightfullogic.java8.examples.chapter3.HigherOrderFunctionExamplesTest" time="0.001"/>
   <testcase name="forToUpperCase" classname="com.insightfullogic.java8.examples.chapter3.HigherOrderFunctionExamplesTest" time="0"/>
-  <testcase name="mapToUpperCase" classname="com.insightfullogic.java8.examples.chapter3.HigherOrderFunctionExamplesTest" time="0.001"/>
-  <testcase name="sumUsingReduce" classname="com.insightfullogic.java8.examples.chapter3.HigherOrderFunctionExamplesTest" time="0.002"/>
-  <testcase name="flatMapCharacters" classname="com.insightfullogic.java8.examples.chapter3.HigherOrderFunctionExamplesTest" time="0.001"/>
-  <testcase name="imperativeMaxLength" classname="com.insightfullogic.java8.examples.chapter3.HigherOrderFunctionExamplesTest" time="0"/>
+  <testcase name="mapToUpperCase" classname="com.insightfullogic.java8.examples.chapter3.HigherOrderFunctionExamplesTest" time="0.005"/>
+  <testcase name="sumUsingReduce" classname="com.insightfullogic.java8.examples.chapter3.HigherOrderFunctionExamplesTest" time="0.001"/>
+  <testcase name="flatMapCharacters" classname="com.insightfullogic.java8.examples.chapter3.HigherOrderFunctionExamplesTest" time="0"/>
+  <testcase name="imperativeMaxLength" classname="com.insightfullogic.java8.examples.chapter3.HigherOrderFunctionExamplesTest" time="0.001"/>
 </testsuite>

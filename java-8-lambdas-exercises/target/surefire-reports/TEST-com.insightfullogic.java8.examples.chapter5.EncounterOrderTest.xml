@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.insightfullogic.java8.examples.chapter5.EncounterOrderTest" time="0.003" tests="4" errors="0" skipped="1" failures="0">
+<testsuite name="com.insightfullogic.java8.examples.chapter5.EncounterOrderTest" time="0.002" tests="4" errors="0" skipped="1" failures="0">
   <properties>
     <property name="idea.version" value="2017.2.5"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -67,5 +67,5 @@
   </testcase>
   <testcase name="listToStream" classname="com.insightfullogic.java8.examples.chapter5.EncounterOrderTest" time="0"/>
   <testcase name="hashSetToStreamSorted" classname="com.insightfullogic.java8.examples.chapter5.EncounterOrderTest" time="0.001"/>
-  <testcase name="toStreamMapped" classname="com.insightfullogic.java8.examples.chapter5.EncounterOrderTest" time="0.002"/>
+  <testcase name="toStreamMapped" classname="com.insightfullogic.java8.examples.chapter5.EncounterOrderTest" time="0.001"/>
 </testsuite>

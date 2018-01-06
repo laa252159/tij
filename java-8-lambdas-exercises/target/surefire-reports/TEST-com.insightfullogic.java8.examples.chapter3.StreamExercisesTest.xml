@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.insightfullogic.java8.examples.chapter3.StreamExercisesTest" time="0.01" tests="3" errors="0" skipped="0" failures="0">
+<testsuite name="com.insightfullogic.java8.examples.chapter3.StreamExercisesTest" time="0.007" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2017.2.5"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -62,7 +62,7 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="external" classname="com.insightfullogic.java8.examples.chapter3.StreamExercisesTest" time="0"/>
-  <testcase name="mapExampleParallel" classname="com.insightfullogic.java8.examples.chapter3.StreamExercisesTest" time="0.009"/>
+  <testcase name="external" classname="com.insightfullogic.java8.examples.chapter3.StreamExercisesTest" time="0.002"/>
+  <testcase name="mapExampleParallel" classname="com.insightfullogic.java8.examples.chapter3.StreamExercisesTest" time="0.004"/>
   <testcase name="mapExample" classname="com.insightfullogic.java8.examples.chapter3.StreamExercisesTest" time="0.001"/>
 </testsuite>

@@ -62,8 +62,8 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="extractsNamesAndOriginsOfArtists" classname="com.insightfullogic.java8.answers.chapter3.Question1Test" time="0.001"/>
+  <testcase name="extractsNamesAndOriginsOfArtists" classname="com.insightfullogic.java8.answers.chapter3.Question1Test" time="0.002"/>
   <testcase name="findsShortAlbums" classname="com.insightfullogic.java8.answers.chapter3.Question1Test" time="0"/>
-  <testcase name="addsListWithValues" classname="com.insightfullogic.java8.answers.chapter3.Question1Test" time="0.001"/>
+  <testcase name="addsListWithValues" classname="com.insightfullogic.java8.answers.chapter3.Question1Test" time="0"/>
   <testcase name="addsEmptyList" classname="com.insightfullogic.java8.answers.chapter3.Question1Test" time="0"/>
 </testsuite>

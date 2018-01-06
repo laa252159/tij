@@ -24,4 +24,6 @@ public class Question1 {
                     .filter(album -> album.getTrackList().size() <= 3)
                     .collect(toList());
     }
+
+
 }

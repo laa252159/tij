@@ -8,7 +8,7 @@ public class CaptureCompileError {
 
     public void error() {
         String name = getUserName();
-        name = formatUserName(name);
+//        name = formatUserName(name);
         // Uncommenting this line should cause a compile error:
         // button.addActionListener(event -> System.out.println("hi " + name));
     }

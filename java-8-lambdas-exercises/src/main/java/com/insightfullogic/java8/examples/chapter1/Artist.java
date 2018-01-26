@@ -76,4 +76,8 @@ public final class Artist {
         return new Artist(name, members, nationality);
     }
 
+    public static void main(String[] args) {
+//        Stream.of("A","A","A")::filter();
+    }
+
 }

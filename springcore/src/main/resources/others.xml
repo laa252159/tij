@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:util="http://www.springframework.org/schema/util"
+
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util-3.2.xsd">
+  <beans>
+
+    <bean id="client" class="com.epam.spring.core.Client" c:name="${name}" p:greeting="Hello from PPP!">
+      <constructor-arg value="${id}"/>
+      <!--<constructor-arg value="${name}"/>-->
+      <!--<property name="greeting" value="${greeting}"/>-->
+      <!--<property name="greeting">-->
+        <!--<util:constant static-field="java.lang.Math.PI"/>-->
+      <!--</property>-->
+    </bean>
+
+    <alias name="client" alias="xxx, zzz"/>
+
+    <bean id="date" class="java.util.Date" scope="prototype"/>
+    <bean id="dateFormat" class="java.text.DateFormat" factory-method="getDateTimeInstance" scope="prototype"/>
+
+    <bean id="event" class="com.epam.spring.core.Event" scope="prototype">
+      <constructor-arg ref="date"/>
+      <constructor-arg ref="dateFormat"/>
+      <constructor-arg value=""/>
+      <constructor-arg value=""/>
+    </bean>
+
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+      <property name="locations">
+        <list>
+          <value>classpath:client.properties</value>
+        </list>
+      </property>
+
+      <property name="ignoreResourceNotFound" value="true"/>
+      <property name="systemPropertiesMode" value="1"/>
+    </bean>
+
+    <util:properties id="clientProps" location="classpath:client.properties"/>
+
+
+
+  </beans>
+  <!-- <bean/> definitions here -->
+
+</beans>

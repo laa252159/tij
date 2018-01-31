@@ -3,6 +3,7 @@ package com.epam.spring.core;
 import java.util.Map;
 
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class App {
@@ -29,6 +30,8 @@ public class App {
         ctx.getBean(CombinedEventLogger.class).logEvent(event);
 
         System.out.println(ctx.getBean(Client.class));
+
+        AnnotationConfigApplicationContext ctxa = new AnnotationConfigApplicationContext(AppConfig.class);
 
 //        System.out.println(ctx.getBean(Client.class).getGreeting());
 //        app.logEvent("Some event for 1");

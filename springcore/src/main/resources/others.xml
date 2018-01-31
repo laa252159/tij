@@ -12,7 +12,7 @@
        http://www.springframework.org/schema/util/spring-util-3.2.xsd">
   <beans>
 
-    <bean id="client" class="com.epam.spring.core.Client" c:name="${name}" p:greeting="Hello from PPP!">
+    <bean id="client" class="com.epam.spring.core.Client" c:name="#{systemEnvironment['USERNAME']}" p:greeting="Hello from PPP!">
       <constructor-arg value="${id}"/>
       <!--<constructor-arg value="${name}"/>-->
       <!--<property name="greeting" value="${greeting}"/>-->

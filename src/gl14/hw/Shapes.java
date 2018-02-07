@@ -4,8 +4,19 @@ import java.util.Arrays;
 import java.util.List;
 
 abstract class Shape {
+
+    private boolean selected;
+
     void draw() {
-        System.out.println(this + ".draw()");
+        System.out.println(this + ".draw() isSelected = " + isSelected());
+    }
+
+    public boolean isSelected() {
+        return selected;
+    }
+
+    public void setSelected(boolean selected) {
+        this.selected = selected;
     }
 
     abstract public String toString();
@@ -37,8 +48,13 @@ class Rhomboid extends Shape {
 
 public class Shapes {
     public static void main(String[] args) {
+        Shape[] shapes = {new Circle(), new Square(), new Triangle(), new Rhomboid()};
+        shapes[0].setSelected(true);
+        shapes[1].setSelected(false);
+        shapes[2].setSelected(true);
+        shapes[3].setSelected(false);
         List<Shape> shapeList = Arrays.asList(
-                new Circle(), new Square(), new Triangle(), new Rhomboid()
+                shapes
         );
         for (Shape shape : shapeList) {
             shape.draw();

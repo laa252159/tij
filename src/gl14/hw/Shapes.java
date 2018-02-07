@@ -42,9 +42,13 @@ public class Shapes {
         );
         for (Shape shape : shapeList) {
             shape.draw();
-            if(shape instanceof Rhomboid){
-                // Circle circle = (Circle) shape; //Exception in thread "main" java.lang.ClassCastException: gl14.hw.Rhomboid cannot be cast to gl14.hw.Circle
-            }
+            rotate(shape);
+        }
+    }
+
+    private static void rotate(Shape shape) {
+        if(shape instanceof Circle){
+            Circle circle = (Circle) shape; //Exception in thread "main" java.lang.ClassCastException: gl14.hw.Rhomboid cannot be cast to gl14.hw.Circle
         }
     }
 } /* Output:

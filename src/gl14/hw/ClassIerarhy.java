@@ -24,7 +24,7 @@ public class ClassIerarhy {
     public static void main(String[] args) {
         FirthClass firthClass = new FirthClass();
         try {
-            System.out.println(returnAllAncestors(firthClass, null));
+            System.out.println(returnAllAncestors(firthClass.getClass(), null));
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         } catch (InstantiationException e) {
@@ -32,7 +32,7 @@ public class ClassIerarhy {
         }
     }
 
-    private static String returnAllAncestors(Object obj, StringBuilder sbIn) throws IllegalAccessException, InstantiationException {
+    private static String returnAllAncestors(Class cl, StringBuilder sbIn) throws IllegalAccessException, InstantiationException {
         StringBuilder sb;
         if (sbIn == null) {
             sb = new StringBuilder();
@@ -44,15 +44,14 @@ public class ClassIerarhy {
             sb.append(" : ");
         }
 
-        for (Class ifaceClass : obj.getClass().getInterfaces()) {
+        for (Class ifaceClass : cl.getInterfaces()) {
             sb.append(" " + ifaceClass + " *** ");
         }
 
-        Class cl = obj.getClass().getSuperclass();
+        Class clSuperclass = cl.getSuperclass();
         sb.append(" " + cl + "\n");
-        if (cl != null) {
-            Object ob = cl.newInstance();
-            returnAllAncestors(ob, sb);
+        if (clSuperclass != null) {
+            returnAllAncestors(clSuperclass, sb);
         }
         return sb.toString();
     }

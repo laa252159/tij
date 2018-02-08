@@ -1,6 +1,8 @@
 package typeinfo;//: typeinfo/FilledList.java
 import java.util.*;
 
+import net.mindview.util.Null;
+
 class CountedInteger {
   private static long counter;
   private final long id = counter++;
@@ -9,6 +11,7 @@ class CountedInteger {
 
 public class FilledList<T> {
   private Class<T> type;
+  public FilledList(){}
   public FilledList(Class<T> type) { this.type = type; }	
   public List<T> create(int nElements) {
     List<T> result = new ArrayList<T>();
@@ -24,6 +27,9 @@ public class FilledList<T> {
     FilledList<CountedInteger> fl =
       new FilledList<CountedInteger>(CountedInteger.class);
     System.out.println(fl.create(15));
+
+    FilledList<? extends Object> f2 = new FilledList<>(FilledList.class);
+    System.out.println(f2.create(15));
   }
 } /* Output:
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]

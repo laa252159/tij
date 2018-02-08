@@ -8,9 +8,10 @@ public class GenericToyTest {
     // Produces exact type:
     FancyToy fancyToy = ftClass.newInstance();
     Class<? super FancyToy> up = ftClass.getSuperclass();
+    System.out.println(up.newInstance());
     // This won't compile:
     // Class<Toy> up2 = ftClass.getSuperclass();
     // Only produces Object:
-    Object obj = up.newInstance();
+    Toy toy = (Toy) up.newInstance();
   }
 } ///:~

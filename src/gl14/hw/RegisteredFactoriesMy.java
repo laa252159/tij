@@ -37,7 +37,7 @@ class Part2 {
   }
 }
 
-class Filter extends Part2 {}
+class Filter extends Part2 {}//
 
 class FuelFilter extends Filter {
   // Create a Class Factory for each specific type:

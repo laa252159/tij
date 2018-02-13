@@ -8,6 +8,10 @@ import java.util.regex.*;
 import static net.mindview.util.Print.*;
 
 public class ShowMethods {
+
+  ShowMethods() {
+  }
+
   private static String usage =
     "usage:\n" +
     "ShowMethods qualified.class.name\n" +

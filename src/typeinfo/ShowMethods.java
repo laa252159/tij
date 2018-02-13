@@ -3,6 +3,7 @@ package typeinfo;//: typeinfo/ShowMethods.java
 // even if the methods are defined in the base class.
 // {Args: ShowMethods}
 import java.lang.reflect.*;
+import java.util.ArrayList;
 import java.util.regex.*;
 import static net.mindview.util.Print.*;
 
@@ -13,7 +14,7 @@ public class ShowMethods {
     "To show all methods in class or:\n" +
     "ShowMethods qualified.class.name word\n" +
     "To search for methods involving 'word'";
-  private static Pattern p = Pattern.compile("\\w+\\.");
+  private static Pattern p = Pattern.compile("\\w+\\.|native\\s|final\\s");
   public static void main(String[] args) {
     if(args.length < 1) {
       print(usage);

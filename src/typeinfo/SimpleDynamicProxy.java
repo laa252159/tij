@@ -18,7 +18,11 @@ class DynamicProxyHandler implements InvocationHandler {
                 System.out.println("  " + arg);
             }
         }
-        return method.invoke(proxied, args);
+        long start = System.nanoTime();
+        Object obj =  method.invoke(proxied, args);
+        long duration = System.nanoTime() - start;
+        System.out.println("METHOD-CALL TIME: " + duration);
+        return obj;
     }
 }
 

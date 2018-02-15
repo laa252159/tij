@@ -20,6 +20,7 @@ class DynamicProxyHandler implements InvocationHandler {
         }
         long start = System.nanoTime();
         Object obj =  method.invoke(proxied, args);
+//        System.out.println(proxy); //Exception in thread "main" java.lang.StackOverflowError
         long duration = System.nanoTime() - start;
         System.out.println("METHOD-CALL TIME: " + duration);
         return obj;

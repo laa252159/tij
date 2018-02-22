@@ -17,7 +17,7 @@ implements Generator<Coffee>, Iterable<Coffee> {
     try {
       return (Coffee)
         types[rand.nextInt(types.length)].newInstance();
-      // Report programmer errors at run time:
+      // Report programmer errors at run time://
     } catch(Exception e) {
       throw new RuntimeException(e);
     }

@@ -26,6 +26,9 @@ public class TupleTest2 {
     System.out.println(g());
     System.out.println(h());
     System.out.println(k());
+
+    TwoTuple<String, Integer> twt = f2();
+    System.out.println(twt);
   }
 } /* Output: (80% match)
 (hi, 47)

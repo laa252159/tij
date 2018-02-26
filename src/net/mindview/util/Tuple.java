@@ -2,6 +2,8 @@
 // Tuple library using type argument inference.
 package net.mindview.util;
 
+import gl15.hw.SixTuple;
+
 public class Tuple {
   public static <A,B> TwoTuple<A,B> tuple(A a, B b) {
     return new TwoTuple<A,B>(a, b);
@@ -14,5 +16,8 @@ public class Tuple {
   }
   public static <A,B,C,D,E> FiveTuple<A,B,C,D,E> tuple(A a, B b, C c, D d, E e) {
     return new FiveTuple<A,B,C,D,E>(a, b, c, d, e);
+  }
+  public static <A,B,C,D,E,F> SixTuple<A,B,C,D,E,F> tuple(A a, B b, C c, D d, E e, F f) {
+    return new SixTuple(a, b, c, d, e, f);
   }
 } ///:~

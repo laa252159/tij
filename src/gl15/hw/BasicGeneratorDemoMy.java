@@ -1,0 +1,20 @@
+package gl15.hw;//: generics/BasicGeneratorDemo.java
+
+import generics.CountedObject;
+import net.mindview.util.BasicGenerator;
+import net.mindview.util.Generator;
+
+public class BasicGeneratorDemoMy {
+  public static void main(String[] args) {
+    Generator<CountedObject> gen =
+      new BasicGenerator(CountedObject.class);
+    for(int i = 0; i < 5; i++)
+      System.out.println(gen.next());
+  }
+} /* Output:
+CountedObject 0
+CountedObject 1
+CountedObject 2
+CountedObject 3
+CountedObject 4
+*///:~

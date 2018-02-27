@@ -41,7 +41,7 @@ public class BankTeller {
     for(Customer c : line)
       serve(tellers.get(rand.nextInt(tellers.size())), c);
   }	
-} /* Output:
+} /* Output: ///
 Teller 3 serves Customer 1
 Teller 2 serves Customer 2
 Teller 3 serves Customer 3

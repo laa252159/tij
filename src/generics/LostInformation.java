@@ -1,5 +1,10 @@
 package generics;//: generics/LostInformation.java
-import java.util.*;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 class Frob {}
 class Fnorkle {}
@@ -12,6 +17,7 @@ public class LostInformation {
     Map<Frob,Fnorkle> map = new HashMap<Frob,Fnorkle>();
     Quark<Fnorkle> quark = new Quark<Fnorkle>();
     Particle<Long,Double> p = new Particle<Long,Double>();
+    List<Integer> its = new ArrayList<>();
     System.out.println(Arrays.toString(
       list.getClass().getTypeParameters()));
     System.out.println(Arrays.toString(
@@ -20,6 +26,8 @@ public class LostInformation {
       quark.getClass().getTypeParameters()));
     System.out.println(Arrays.toString(
       p.getClass().getTypeParameters()));
+    System.out.println(Arrays.toString(
+            its.getClass().getTypeParameters()));
   }
 } /* Output:
 [E]

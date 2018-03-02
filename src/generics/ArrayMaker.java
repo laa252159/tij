@@ -1,4 +1,4 @@
-//: generics/ArrayMaker.java
+package generics;//: generics/ArrayMaker.java
 import java.lang.reflect.*;
 import java.util.*;
 
@@ -14,6 +14,7 @@ public class ArrayMaker<T> {
       new ArrayMaker<String>(String.class);
     String[] stringArray = stringMaker.create(9);
     System.out.println(Arrays.toString(stringArray));
+    System.out.println(stringArray.getClass());
   }
 } /* Output:
 [null, null, null, null, null, null, null, null, null]

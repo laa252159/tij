@@ -86,6 +86,6 @@ public class EpicBattle {
         // You can do this:
         List<? extends SuperHearing> audioBoys;
         // But you can't do this:
-        // List<? extends SuperHearing & SuperSmell> dogBoys;
+        // List<? extends SuperHearing & SuperSmell> dogBoys; //
     }
 } ///:~

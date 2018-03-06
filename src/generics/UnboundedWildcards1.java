@@ -29,7 +29,7 @@ public class UnboundedWildcards1 {
     public static void main(String[] args) {
         assign1(new ArrayList());
         assign2(new ArrayList());
-        // assign3(new ArrayList()); // Warning:
+        assign3(new ArrayList()); // Warning:
         // Unchecked conversion. Found: ArrayList
         // Required: List<? extends Object>
         assign1(new ArrayList<String>());

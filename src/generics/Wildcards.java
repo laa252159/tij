@@ -4,10 +4,10 @@ package generics;//: generics/Wildcards.java
 public class Wildcards {
    // Raw argument:
   static void rawArgs(Holder holder, Object arg) {
-    // holder.set(arg); // Warning:
+     holder.set(arg); // Warning:
     //   Unchecked call to set(T) as a
     //   member of the raw type Holder
-    // holder.set(new Wildcards()); // Same warning
+     holder.set(new Wildcards()); // Same warning
 
     // Can't do this; don't have any 'T':
     // T t = holder.get();
@@ -74,7 +74,7 @@ public class Wildcards {
     unboundedArg(unbounded, lng);
     unboundedArg(bounded, lng);
 
-    // Object r1 = exact1(raw); // Warnings:
+     Object r1 = exact1(raw); // Warnings:
     //   Unchecked conversion from Holder to Holder<T>
     //   Unchecked method invocation: exact1(Holder<T>)
     //   is applied to (Holder)
@@ -82,7 +82,7 @@ public class Wildcards {
     Object r3 = exact1(unbounded); // Must return Object
     Long r4 = exact1(bounded);
 	
-    // Long r5 = exact2(raw, lng); // Warnings:
+     Long r5 = exact2(raw, lng); // Warnings:
     //   Unchecked conversion from Holder to Holder<Long>
     //   Unchecked method invocation: exact2(Holder<T>,T)
     //   is applied to (Holder,Long)
@@ -94,7 +94,7 @@ public class Wildcards {
     //   exact2(Holder<T>,T) cannot be applied
     //   to (Holder<capture of ? extends Long>,Long)
 	
-    // Long r9 = wildSubtype(raw, lng); // Warnings:
+     Long r9 = wildSubtype(raw, lng); // Warnings:
     //   Unchecked conversion from Holder
     //   to Holder<? extends Long>
     //   Unchecked method invocation:

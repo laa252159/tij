@@ -1,13 +1,13 @@
 package generics;//: generics/OrdinaryArguments.java
 
-class OrdinarySetter {
-    void set(Base base) {
+class OrdinarySetter<T extends Base> {
+    void set(T base) {
         System.out.println("OrdinarySetter.set(Base)");
     }
 }
 
-class DerivedSetter extends OrdinarySetter {
-    void set(Derived derived) {
+class DerivedSetter<T extends Derived> extends OrdinarySetter {
+    void set(T derived) {
         System.out.println("DerivedSetter.set(Derived)");
     }
 }

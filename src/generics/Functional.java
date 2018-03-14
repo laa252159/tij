@@ -44,8 +44,7 @@ public class Functional {
     // the list, ignoring the return value. The function
     // object may act as a collecting parameter, so it is
     // returned at the end.
-    public static <T> Collector<T>
-    forEach(Iterable<T> seq, Collector<T> func) {
+    public static <T> Collector<T> forEach(Iterable<T> seq, Collector<T> func) {
         for (T t : seq) {
             func.function(t);
         }
@@ -65,8 +64,7 @@ public class Functional {
 
     // Applies a unary predicate to each item in a sequence,
     // and returns a list of items that produced "true":
-    public static <T> List<T>
-    filter(Iterable<T> seq, UnaryPredicate<T> pred) {
+    public static <T> List<T> filter(Iterable<T> seq, UnaryPredicate<T> pred) {
         List<T> result = new ArrayList<T>();
         for (T t : seq) {
             if (pred.test(t)) {
@@ -118,8 +116,7 @@ public class Functional {
         }
     }
 
-    static class GreaterThan<T extends Comparable<T>>
-            implements UnaryPredicate<T> {
+    static class GreaterThan<T extends Comparable<T>> implements UnaryPredicate<T> {
         private T bound;
 
         public GreaterThan(T bound) {
@@ -131,8 +128,7 @@ public class Functional {
         }
     }
 
-    static class MultiplyingIntegerCollector
-            implements Collector<Integer> {
+    static class MultiplyingIntegerCollector implements Collector<Integer> {
         private Integer val = 1;
 
         public Integer function(Integer x) {

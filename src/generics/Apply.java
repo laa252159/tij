@@ -76,4 +76,4 @@ class ApplyTest {
         }
         Apply.apply(shapeQ, Shape.class.getMethod("rotate"));
     }
-} /* (Execute to see output) *///:~
+} /* (Execute to see output) *///:~//

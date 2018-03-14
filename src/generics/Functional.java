@@ -26,8 +26,7 @@ interface UnaryPredicate<T> {
 public class Functional {
     // Calls the Combiner object on each element to combine
     // it with a running result, which is finally returned:
-    public static <T> T
-    reduce(Iterable<T> seq, Combiner<T> combiner) {
+    public static <T> T reduce(Iterable<T> seq, Combiner<T> combiner) {
         Iterator<T> it = seq.iterator();
         if (it.hasNext()) {
             T result = it.next();

@@ -189,7 +189,7 @@ public class Functional {
 
         print(transform(lbd, new BigDecimalUlp()));
     }
-} /* Output:
+} /* Output: //
 28
 -26
 [5, 6, 7]

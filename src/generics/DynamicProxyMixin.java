@@ -58,7 +58,7 @@ public class DynamicProxyMixin {
         System.out.println(t.getStamp());
         System.out.println(s.getSerialNumber());
     }
-} /* Output: (Sample)
+} /* Output: (Sample)//
 Hello
 1132519137015
 1

@@ -6,6 +6,10 @@ import java.util.*;
 import static net.mindview.util.Print.*;
 
 public class ArrayOptions {
+    BerylliumSphere[] f = {new BerylliumSphere(), new BerylliumSphere()};
+    BerylliumSphere[] m = new BerylliumSphere[]{new BerylliumSphere(), new BerylliumSphere()};
+    BerylliumSphere[] k = new BerylliumSphere[2];
+
     public static void main(String[] args) {
         // Arrays of objects:
         BerylliumSphere[] a; // Local uninitialized variable
@@ -26,7 +30,7 @@ public class ArrayOptions {
         };
         // Dynamic aggregate initialization:
         a = new BerylliumSphere[]{
-                new BerylliumSphere(), new BerylliumSphere(),
+            new BerylliumSphere(), new BerylliumSphere(),
         };
         // (Trailing comma is optional in both cases)
         print("a.length = " + a.length);

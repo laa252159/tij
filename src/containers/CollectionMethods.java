@@ -1,7 +1,9 @@
 package containers;//: containers/CollectionMethods.java
 // Things you can do with all Collections.
 import java.util.*;
+
 import net.mindview.util.*;
+
 import static net.mindview.util.Print.*;
 
 public class CollectionMethods {

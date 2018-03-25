@@ -5,7 +5,7 @@ import net.mindview.util.*;
 public class UniqueWords {
   public static void main(String[] args) {
     Set<String> words = new TreeSet<String>(
-      new TextFile("SetOperations.java", "\\W+"));
+      new TextFile("/Users/sanix/development/tij/src/holding/SetOperations.java", "\\W+"));
     System.out.println(words);
   }
 } /* Output:

@@ -4,7 +4,7 @@ import java.util.*;
 
 public class PriorityQueueTest {
     public static void main(String[] args) {
-        PriorityQueue<Item> queue = new PriorityQueue<Item>();
+        Queue<Item> queue = new PriorityQueue<Item>();
         for(int i = 0; i < 22; i++)
             queue.add(new Item());
         Item item;

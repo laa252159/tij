@@ -7,6 +7,8 @@ class TestSimpleClass{
       if(sc == null){
          sc = new SimpleClass();
       }
+      Object o = void.class;
+      Object i = int.class;
       return sc;
    }
 
